@@ -1,0 +1,51 @@
+doctype html
+html.no-js(lang="")
+  head
+    meta(charset="utf-8")
+    title celebee
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+    link(rel="apple-touch-icon" href="apple-touch-icon.png")
+    // Place favicon.ico and apple-touch-icon.png in the root directory
+    // build:css styles/vendor.css
+    // bower:css
+    link(rel='stylesheet', href='/bower_components/slick-carousel/slick/slick.css')
+    // endbower
+    // endbuild
+
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css")
+
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext,vietnamese")
+
+    // build:css styles/main.css
+    link(rel="stylesheet" href="styles/main.css")
+    // endbuild
+    // build:js scripts/vendor/modernizr.js async
+    script(src="../bower_components/modernizr/modernizr.js")
+    // endbuild
+
+  body.sticky-footer
+
+    block content
+
+    // build:js scripts/vendor.js
+    // bower:js
+    script(src='/bower_components/modernizr/modernizr.js')
+    script(src='/bower_components/jquery/dist/jquery.js')
+    script(src='/bower_components/slick-carousel/slick/slick.js')
+    // endbower 
+    // bootstrap:js
+    script(src="/bower_components/bootstrap/js/dist/util.js")
+    script(src="/bower_components/bootstrap/js/dist/alert.js")
+    script(src="/bower_components/bootstrap/js/dist/button.js")
+    script(src="/bower_components/bootstrap/js/dist/carousel.js")
+    script(src="/bower_components/bootstrap/js/dist/collapse.js")
+    script(src="/bower_components/bootstrap/js/dist/modal.js")
+    script(src="/bower_components/bootstrap/js/dist/scrollspy.js")
+    script(src="/bower_components/bootstrap/js/dist/tab.js")
+    // endbootstrap
+    // endbuild
+
+    // build:js scripts/main.js
+    script(src="scripts/main.js")
+    // endbuild
