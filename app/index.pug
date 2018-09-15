@@ -1,5 +1,20 @@
 extends layouts/default
 
 block content
-  .container
-    h1 Hello you
+	.container
+		.row
+			.col-xs-12
+				h2 Buttons
+
+				h3 Default (a, input, button)
+
+				a.btn(href="#") Sử dụng mặc định
+
+				input.btn(type="submit", value="Send Message")
+
+				button.btn Load more
+
+				h3 primary button
+
+				a.btn.btn--primary(href="#") live stream
+					.icon-bg
