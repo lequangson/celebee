@@ -2,6 +2,82 @@ extends layouts/default
 
 block content
 	include includes/header.pug
-	.container
-		
+	.page-content
+		.home-slide
+			.slide-item
+				img(src="images/slide-1.jpg")
+			.slide-item
+				img(src="images/slide-2.jpg")
+			.slide-item
+				img(src="images/slide-1.jpg")
+		.container
+			.member-slider
+				.main-title
+					h2 HOT 
+						span CELEB
+				.member-slide
+					.slide-item
+						img(src="images/member-slide-1.png")
+						.meber-description
+							.text-description
+								.name Vũ Phương Hồng
+								.flow 999 Flow
+					.slide-item.live
+						img(src="images/member-slide-2.png")
+						.meber-description
+							.text-description
+								.name Vũ Phương Hồng
+								.flow 999 Flow
+						.live-text LIVE
+					.slide-item
+						img(src="images/member-slide-3.png")
+						.meber-description
+							.text-description
+								.name Vũ Phương Hồng
+								.flow 999 Flow
+					.slide-item
+						img(src="images/member-slide-1.png")
+						.meber-description
+							.text-description
+								.name Vũ Phương Hồng
+								.flow 999 Flow
+					.slide-item
+						img(src="images/member-slide-2.png")
+						.meber-description
+							.text-description
+								.name Vũ Phương Hồng
+								.flow 999 Flow
+					.slide-item
+						img(src="images/member-slide-3.png")
+						.meber-description
+							.text-description
+								.name Vũ Phương Hồng
+								.flow 999 Flow
+					.slide-item
+						img(src="images/member-slide-1.png")
+						.meber-description
+							.text-description
+								.name Vũ Phương Hồng
+								.flow 999 Flow
+					.slide-item
+						img(src="images/member-slide-2.png")
+						.meber-description
+							.text-description
+								.name Vũ Phương Hồng
+								.flow 999 Flow
+
+					.slide-item
+						img(src="images/member-slide-3.png")
+						.meber-description
+							.text-description
+								.name Vũ Phương Hồng
+								.flow 999 Flow
+			.live-colection
+				p.live-title
+					span.live-text LIVE 
+					| Bộ sưu tập trang sức của Celeb 
+					span Diệp Anh 
+					| sẽ diễn ra trong
+				.countdown(data-time="2019/01/01 8:30")
+
 	include includes/footer.pug

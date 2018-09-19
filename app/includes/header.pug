@@ -77,20 +77,49 @@ header
 									a.nav-link(href="#") Live Stream
 	.mobile-header
 		#header-mobile
+
 			.top-header
-				.container
-					.top-bar
-						ul.top-bar-nav
-							li
-								a(href="#") Đăng kí
-							li
-							li
-								a(href="#") Đăng nhập
-							li.member-logged
-								a(href="#") Chào Trần Mạnh Hùng
-								.beecoin +5 Beecoin
-							li
-								a(href="#") Hướng dẫn mua hàng
+				
+				.top-bar
+					ul.top-bar-nav.d-flex.justify-content-center
+						li
+							a(href="#") Đăng kí
+						li
+						li
+							a(href="#") Đăng nhập
+						li.member-logged
+							a(href="#") Chào Trần Mạnh Hùng
+							.beecoin +5 Beecoin
+						li
+							a(href="#") Hướng dẫn mua hàng
+			.main-nav-mobile
+				h3 Menu
+				ul.navbar-nav.d-flex
+					li.nav-item
+						a.nav-link(href="#") Hot Celeb
+					li.nav-item
+						a.nav-link(href="#") Hot Trends
+					li.nav-item
+						a.nav-link(href="#") Crazy Sales
+					li.nav-item
+						a.nav-link(href="#") Hot Celeb
+					li.nav-item
+						a.nav-link(href="#") Hot Celeb
+					li.nav-item.live-stream
+						a.nav-link(href="#") Live Stream
+			.category-mobile
+				h3 Danh Mục
+				ul
+					li
+						a Danh mục 1
+					li
+						a Danh mục 1
+					li
+						a Danh mục 1
+					li
+						a Danh mục 1
+					li
+						a Danh mục 1
 		.content-mobile-menu.d-flex
 			.toggle-mobile-menu.item-header-mobile
 				.menu-link 
@@ -102,6 +131,14 @@ header
 			.mobile-cart.item-header-mobile
 				a(href="#")
 					img(src="images/icon/icon-cart.png")
+			.mobile-serch.item-header-mobile
+				.toggle-search
+					img(src="images/icon/icon-search.png")
+					.search-box
+						.form-group
+							input(type="text", placeholder="Tìm kiếm")
+							button(type="submit") Tìm kiếm
+				
 
 			
 		  	
