@@ -263,7 +263,9 @@
 		font-weight: bold;
 		li {
 			display: inline-block;
-
+			p {
+				color: $color-primary;
+			}
 		}
 	}
 }
@@ -317,56 +319,7 @@
 			width: 40%;
 			
 		}
-		.header-trend {
-	        .avatar {
-	        	position: relative;
-	        	img {
-					margin-right: 10px;
-					border-radius: 50%;
-				}
-				
-				&.active {
-					img {
-						border: 1px solid $color-primary;
-					}
-					span {
-						position: absolute;
-						bottom: 0;
-						left: 50%;
-						transform: translateX(-50%);
-						padding: 1px 3px 1px 12px;
-						font-size: 12px;
-						display: inline-block;
-						@include rounded(3px);
-						background-color: $color-primary;
-						color: $white;
-						&:before {
-							position: absolute;
-							content: "• ";
-						    color: $white;
-						    left: 3px;
-						    top: 0;
-						}
-					}
-				}
-
-	        }
-			
-			.member-info {
-				padding-top: 10px;
-				p {
-					color: #000;
-					margin-bottom: 0;
-					&:first-child {
-						font-weight: bold;
-					}
-					&:last-child {
-						text-transform: uppercase;
-						font-size: 12px;
-					}
-				}
-			}
-		}
+		
 		.thumbnail-trend {
 			position: relative;
 			> img {
@@ -400,10 +353,24 @@
 						font-size: 50px;
 						color: $white;
 						font-weight: 300;
+						&.fa-heart {
+							display: none;
+						}
+					}
+					&.active {
+						i {
+							color: $color-primary;
+							&.fa-heart-o {
+								display: none;
+							}
+							&.fa-heart {
+								display: inline-block;
+							}
+						}
 					}
 				}
 				.product-info {
-					
+					border-bottom: 1px solid $color-border;
 					position: absolute;
 					width: 100%;
 					bottom: -1px;
@@ -437,7 +404,7 @@
 						text-align: right;
 						padding-right: 15px;
 						width: 30%;
-						.content-right-info {
+						.sticky-heart {
 							display: inline-block;
 							background-color: $color-primary;
 							color: $white;
@@ -462,6 +429,267 @@
 					}
 				}
 			}
+		}
+	}
+}
+.header-trend, .header-product-sale{
+    .avatar {
+    	position: relative;
+    	img {
+			margin-right: 10px;
+			border-radius: 50%;
+		}
+		
+		&.active {
+			img {
+				border: 1px solid $color-primary;
+			}
+			span {
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				padding: 1px 3px 1px 12px;
+				font-size: 12px;
+				display: inline-block;
+				@include rounded(3px);
+				background-color: $color-primary;
+				color: $white;
+				&:before {
+					position: absolute;
+					content: "• ";
+				    color: $white;
+				    left: 3px;
+				    top: 0;
+				}
+			}
+		}
+
+    }
+	
+	.member-info {
+		padding-top: 10px;
+		p {
+			color: #000;
+			margin-bottom: 0;
+			&:first-child {
+				font-weight: bold;
+			}
+			&:last-child {
+				text-transform: uppercase;
+				font-size: 12px;
+			}
+		}
+	}
+}
+.thumbnail-trend, .thumbnail-product {
+	position: relative;
+	> img {
+		width: 100%;
+	}
+	.overlay-content {
+		position: absolute;
+		left: 0;
+		opacity: 0;
+		top: 0;
+		width: 100%;
+		bottom: 0;
+		background-color: rgba(#000,0.45);
+		@include transition(all 0.3s);
+		
+		> h3 {
+			position: absolute;
+			left: 0;
+			width: 100%;
+			text-align: center;
+			top: calc(50% - 90px);
+			color: $white;
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+		.love {
+			position: absolute;
+			bottom: 95px;
+			right: 15px;
+			i {
+				font-size: 50px;
+				color: $white;
+				font-weight: 300;
+				&.fa-heart {
+					display: none;
+				}
+			}
+			&.active {
+				i {
+					color: $color-primary;
+					&.fa-heart-o {
+						display: none;
+					}
+					&.fa-heart {
+						display: inline-block;
+					}
+				}
+			}
+		}
+		.product-info {
+			border-bottom: 1px solid $color-border;
+			position: absolute;
+			width: 100%;
+			bottom: -1px;
+			height: 90px;
+
+			background-color: $white;
+			.left-info {
+				padding-top: 10px;
+				padding-left: 15px;
+				width: 70%;
+				h3 {
+					a {
+						font-size: 14px;
+						color: #000;
+						font-weight: 700;
+						margin-bottom: 30px;
+						&:hover {
+							color: $color-primary;
+							text-decoration: none;
+						}
+					}
+					
+				}
+				.price {
+					font-size: 22px;
+					color: #000;
+				}
+			}
+			.right-info {
+				margin-top: 50px;
+				text-align: right;
+				padding-right: 15px;
+				width: 30%;
+				
+			}
+		}
+	}
+}
+.sticky-heart {
+	display: inline-block;
+	background-color: $color-primary;
+	color: $white;
+	padding: 2px 8px;
+	border-radius: 4px;
+	img {
+		margin-left: 5px;
+	}
+}
+.content-product-sale {
+	margin-left: -15px;
+	margin-right: -15px;
+	@media(max-width: 991px) {
+		flex-wrap: wrap;
+		justify-content: start!important;
+	}
+	.item-product-sale {
+		width: 33.3333%;
+		margin-left: 15px;
+		margin-right: 15px;
+		border: 1px solid $color-border;
+		@media(max-width: 991px) {
+			width: 45%;
+			margin-top: 30px;
+
+		}
+		@media(max-width: 767px) {
+			width: 40%;
+		}
+		@media(max-width: 649px) {
+			width: 100%;
+		}
+		.thumbnail-product {
+			.overlay-content {
+				> h3 {
+					top: 50%;
+					transform: translateY(-50%);
+				}
+				.love {
+					bottom: 15px;
+				}
+			}
+		}
+		&:hover {
+			border-color: $color-primary;
+			.thumbnail-product {
+				.overlay-content {
+					opacity: 1;
+				}
+			}
+		}
+		.footer-product {
+			padding: 15px 10px;
+			.left-footer-product {
+				width: 50%;
+				h3 {
+					margin-bottom: 30px;
+					margin-top: 0;
+					line-height: 1;
+					a {
+						font-size: 14px;
+						color: #030303;
+						font-weight: 700;
+						&:hover {
+							color: $color-primary;
+						}
+					}
+				}
+			}
+			.center-footer-product {
+				width: 30%;
+				.price {
+					.price-old {
+						font-size: 16px;
+						color: $color-link;
+						text-decoration: line-through;
+					}
+					.price-sale {
+						font-size: 20px;
+						color: $color-primary;
+						font-weight: 700;
+					}
+
+				}
+				.in-store {
+					padding: 2px 15px;
+					@include rounded(4px);
+					font-size: 10px;
+					text-transform: uppercase;
+					color: $white;
+					text-align: center;
+					background: linear-gradient(90deg, $color-primary 50%, #c690ab 50%);
+				}
+			}
+			.right-footer-product {
+				width: 50px;
+				height: 50px;
+				@include rounded(50%);
+				background-color: $color-primary;
+				color: $white;
+				text-align: center;
+			}
+		}
+	}
+}
+
+.view-more {
+	margin-top: 30px;
+	text-align: center;
+	a {
+		display: inline-block;
+		padding: 10px 40px;
+		@include rounded(4px);
+		border: 1px solid $color-primary;
+		color: $color-primary;
+		&:hover {
+			background-color: $color-primary;
+			color: $white;
 		}
 	}
 }

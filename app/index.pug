@@ -78,12 +78,12 @@ block content
 					| Bộ sưu tập trang sức của Celeb 
 					span Diệp Anh 
 					| sẽ diễn ra trong
-				.countdown(data-time="2019/01/01 8:30")
+				.countdown(data-time="2018/01/01 8:30")
 			.hot-trends
 				.main-title
 					h2 HOT 
 						span TRENDS
-				.content-hot-trend.d-flex
+				.content-hot-trend.d-flex.justify-content-center
 						
 					.item-hot-trend
 						.header-trend.d-flex
@@ -106,7 +106,31 @@ block content
 											a(href="#") Chân váy điệu đà
 										p.price 910.000đ
 									.right-info 
-										.content-right-info +5
+										.sticky-heart +5
+											img(src="images/icon/icon-heart.png")
+					.item-hot-trend
+						.header-trend.d-flex
+							.avatar
+								img(src="images/avatar-1.png")
+								
+							.member-info
+								p.name Trương Bảo Anh
+								p.follow 2000 follows
+						.thumbnail-trend
+							img(src="images/user-1.png")
+							.overlay-content
+								h3 99 Loves
+								.love.active
+									a(href="#")
+										i.fa.fa-heart-o
+										i.fa.fa-heart
+								.product-info.d-flex
+									.left-info
+										h3 
+											a(href="#") Chân váy điệu đà
+										p.price 910.000đ
+									.right-info 
+										.sticky-heart +5
 											img(src="images/icon/icon-heart.png")
 					.item-hot-trend
 						.header-trend.d-flex
@@ -129,7 +153,7 @@ block content
 											a(href="#") Chân váy điệu đà
 										p.price 910.000đ
 									.right-info 
-										.content-right-info +5
+										.sticky-heart +5
 											img(src="images/icon/icon-heart.png")
 					.item-hot-trend
 						.header-trend.d-flex
@@ -152,35 +176,78 @@ block content
 											a(href="#") Chân váy điệu đà
 										p.price 910.000đ
 									.right-info 
-										.content-right-info +5
+										.sticky-heart +5
 											img(src="images/icon/icon-heart.png")
-					.item-hot-trend
-						.header-trend.d-flex
-							.avatar
-								img(src="images/avatar-1.png")
-								
-							.member-info
-								p.name Trương Bảo Anh
-								p.follow 2000 follows
-						.thumbnail-trend
-							img(src="images/user-1.png")
-							.overlay-content
-								h3 99 Loves
-								.love
-									a(href="#")
-										i.fa.fa-heart-o
-								.product-info.d-flex
-									.left-info
-										h3 
-											a(href="#") Chân váy điệu đà
-										p.price 910.000đ
-									.right-info 
-										.content-right-info +5
-											img(src="images/icon/icon-heart.png")
+				.view-more
+					a(href="#") Xem thêm
 			.products-sale
 				.main-title.with-countdown
 					h2 Crazy 
 						span Sales
 					.countdown(data-time="2018/01/12 8:30")
+				.products-sale
+					.content-product-sale.d-flex.justify-content-center
+						.item-product-sale.style-1
+							.header-product-sale.d-flex
+								.avatar
+									img(src="images/avatar-1.png")
+									
+								.member-info
+									p.name Trương Bảo Anh
+									p.follow 2000 follows
+							.thumbnail-product
+								img(src="images/product-sale.jpg")
+								.overlay-content
+									h3 99 Loves
+									.love
+										a(href="#")
+											i.fa.fa-heart-o
+											i.fa.fa-heart
+							.footer-product.d-flex
+								.left-footer-product
+									h3
+										a(href="#") Nước Hoa Hồng
+									.sticky-heart +5
+											img(src="images/icon/icon-heart.png")
+								.center-footer-product
+									.price
+										.price-old 1.300.000đ
+										.price-sale 910.000đ
+									.in-store đã bán 99
+								.right-footer-product 30% 
+									span off
+						.item-product-sale.style-1
+							.header-product-sale.d-flex
+								.avatar
+									img(src="images/avatar-1.png")
+									
+								.member-info
+									p.name Trương Bảo Anh
+									p.follow 2000 follows
+							.thumbnail-product
+								img(src="images/product-sale.jpg")
+								.overlay-content
+									h3 99 Loves
+									.love
+										a(href="#")
+											i.fa.fa-heart-o
+											i.fa.fa-heart
+						.item-product-sale.style-1
+							.header-product-sale.d-flex
+								.avatar
+									img(src="images/avatar-1.png")
+									
+								.member-info
+									p.name Trương Bảo Anh
+									p.follow 2000 follows
+							.thumbnail-product
+								img(src="images/product-sale.jpg")
+								.overlay-content
+									h3 99 Loves
+									.love.active
+										a(href="#")
+											i.fa.fa-heart-o
+											i.fa.fa-heart
+
 
 	include includes/footer.pug
