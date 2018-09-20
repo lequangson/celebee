@@ -222,6 +222,8 @@
 	h2 {
 		display: inline-block;
   		position: relative;  
+  		font-weight: 700;
+  		text-transform: uppercase;
   		span {
 			color: $black;
 		}
@@ -243,7 +245,11 @@
  			margin-left: 30px;
 		}
 	}
-	
+	.countdown {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
 	
 }
 .slick-dots {
@@ -288,5 +294,174 @@
 	}
 	.countdown {
 		display: inline-block;
+	}
+}
+.content-hot-trend {
+	margin-left: -15px;
+	margin-right: -15px;
+	@media(max-width: 991px) {
+		flex-wrap: wrap;
+	}
+	.item-hot-trend {
+		border: 1px solid $color-border;
+		
+		@include transition(all 0.3s);
+		width: 25%;
+		margin-left: 15px;
+		margin-right: 15px;
+		@media(max-width: 991px) {
+			width: 45%;
+			margin-top: 30px;
+		}
+		@media(max-width: 767px) {
+			width: 40%;
+			
+		}
+		.header-trend {
+	        .avatar {
+	        	position: relative;
+	        	img {
+					margin-right: 10px;
+					border-radius: 50%;
+				}
+				
+				&.active {
+					img {
+						border: 1px solid $color-primary;
+					}
+					span {
+						position: absolute;
+						bottom: 0;
+						left: 50%;
+						transform: translateX(-50%);
+						padding: 1px 3px 1px 12px;
+						font-size: 12px;
+						display: inline-block;
+						@include rounded(3px);
+						background-color: $color-primary;
+						color: $white;
+						&:before {
+							position: absolute;
+							content: "• ";
+						    color: $white;
+						    left: 3px;
+						    top: 0;
+						}
+					}
+				}
+
+	        }
+			
+			.member-info {
+				padding-top: 10px;
+				p {
+					color: #000;
+					margin-bottom: 0;
+					&:first-child {
+						font-weight: bold;
+					}
+					&:last-child {
+						text-transform: uppercase;
+						font-size: 12px;
+					}
+				}
+			}
+		}
+		.thumbnail-trend {
+			position: relative;
+			> img {
+				width: 100%;
+			}
+			.overlay-content {
+				position: absolute;
+				left: 0;
+				opacity: 0;
+				top: 0;
+				width: 100%;
+				bottom: 0;
+				background-color: rgba(#000,0.45);
+				@include transition(all 0.3s);
+				
+				> h3 {
+					position: absolute;
+					left: 0;
+					width: 100%;
+					text-align: center;
+					top: calc(50% - 90px);
+					color: $white;
+					font-weight: 500;
+					text-transform: uppercase;
+				}
+				.love {
+					position: absolute;
+					bottom: 95px;
+					right: 15px;
+					i {
+						font-size: 50px;
+						color: $white;
+						font-weight: 300;
+					}
+				}
+				.product-info {
+					
+					position: absolute;
+					width: 100%;
+					bottom: -1px;
+					height: 90px;
+
+					background-color: $white;
+					.left-info {
+						padding-top: 10px;
+						padding-left: 15px;
+						width: 70%;
+						h3 {
+							a {
+								font-size: 14px;
+								color: #000;
+								font-weight: 700;
+								margin-bottom: 30px;
+								&:hover {
+									color: $color-primary;
+									text-decoration: none;
+								}
+							}
+							
+						}
+						.price {
+							font-size: 22px;
+							color: #000;
+						}
+					}
+					.right-info {
+						margin-top: 50px;
+						text-align: right;
+						padding-right: 15px;
+						width: 30%;
+						.content-right-info {
+							display: inline-block;
+							background-color: $color-primary;
+							color: $white;
+							padding: 2px 8px;
+							border-radius: 4px;
+							img {
+								margin-left: 5px;
+							}
+						}
+					}
+				}
+			}
+		}
+		&:hover {
+			border-color: $color-primary;
+			border-bottom: 1px solid transparent;
+			.thumbnail-trend {
+				.overlay-content {
+					opacity: 1;
+					.product-info { 
+						border-color: $color-primary;
+					}
+				}
+			}
+		}
 	}
 }
