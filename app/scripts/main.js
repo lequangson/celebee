@@ -8,7 +8,9 @@ $(document).ready(function() {
        $(".search-box").toggle();
        $("input[type='text']").focus();
      });
+
 	  $('.home-slide').slick();
+	  $('.home-slide-2').slick();
 	  $('.member-slide').slick({
 		  dot: false,
 		  infinite: true,
@@ -55,4 +57,10 @@ $(document).ready(function() {
             );
         });
     });
+
+	$('.isotope-gallery').isotope({
+	  	layoutMode: 'packery',
+	  	itemSelector: '.item-gallery',
+	  	
+	});
 });

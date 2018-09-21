@@ -85,7 +85,7 @@ block content
 						span TRENDS
 				.content-hot-trend.d-flex.justify-content-center
 						
-					.item-hot-trend
+					.item-hot-trend.col-per-4
 						.header-trend.d-flex
 							.avatar.active
 								img(src="images/avatar-1.png")
@@ -108,7 +108,7 @@ block content
 									.right-info 
 										.sticky-heart +5
 											img(src="images/icon/icon-heart.png")
-					.item-hot-trend
+					.item-hot-trend.col-per-4
 						.header-trend.d-flex
 							.avatar
 								img(src="images/avatar-1.png")
@@ -132,7 +132,7 @@ block content
 									.right-info 
 										.sticky-heart +5
 											img(src="images/icon/icon-heart.png")
-					.item-hot-trend
+					.item-hot-trend.col-per-4
 						.header-trend.d-flex
 							.avatar
 								img(src="images/avatar-1.png")
@@ -155,7 +155,7 @@ block content
 									.right-info 
 										.sticky-heart +5
 											img(src="images/icon/icon-heart.png")
-					.item-hot-trend
+					.item-hot-trend.col-per-4
 						.header-trend.d-flex
 							.avatar
 								img(src="images/avatar-1.png")
@@ -180,74 +180,372 @@ block content
 											img(src="images/icon/icon-heart.png")
 				.view-more
 					a(href="#") Xem thêm
-			.products-sale
-				.main-title.with-countdown
+			.main-title.with-countdown
 					h2 Crazy 
 						span Sales
 					.countdown(data-time="2018/01/12 8:30")
-				.products-sale
-					.content-product-sale.d-flex.justify-content-center
-						.item-product-sale.style-1
-							.header-product-sale.d-flex
-								.avatar
-									img(src="images/avatar-1.png")
-									
-								.member-info
-									p.name Trương Bảo Anh
-									p.follow 2000 follows
-							.thumbnail-product
-								img(src="images/product-sale.jpg")
-								.overlay-content
-									h3 99 Loves
-									.love
-										a(href="#")
-											i.fa.fa-heart-o
-											i.fa.fa-heart
-							.footer-product.d-flex
-								.left-footer-product
-									h3
-										a(href="#") Nước Hoa Hồng
-									.sticky-heart +5
-											img(src="images/icon/icon-heart.png")
-								.center-footer-product
-									.price
+				
+			.products-sale
+				.content-product-sale.d-flex.justify-content-center
+					.item-product-sale.col-per-3.style-1
+						.header-product-sale.d-flex
+							.avatar
+								img(src="images/avatar-1.png")
+								
+							.member-info
+								p.name Trương Bảo Anh
+								p.follow 2000 follows
+						.thumbnail-product
+							img(src="images/product-sale.jpg")
+							.overlay-content
+								h3 99 Loves
+								.love
+									a(href="#")
+										i.fa.fa-heart-o
+										i.fa.fa-heart
+						.footer-product.d-flex
+							.left-footer-product
+								h3
+									a(href="#") Nước Hoa Hồng
+								.sticky-heart +5
+										img(src="images/icon/icon-heart.png")
+							.right-footer-product
+								.price.d-flex
+									.price-detail
 										.price-old 1.300.000đ
 										.price-sale 910.000đ
-									.in-store đã bán 99
-								.right-footer-product 30% 
-									span off
-						.item-product-sale.style-1
-							.header-product-sale.d-flex
-								.avatar
-									img(src="images/avatar-1.png")
-									
-								.member-info
-									p.name Trương Bảo Anh
-									p.follow 2000 follows
-							.thumbnail-product
-								img(src="images/product-sale.jpg")
-								.overlay-content
-									h3 99 Loves
-									.love
-										a(href="#")
-											i.fa.fa-heart-o
-											i.fa.fa-heart
-						.item-product-sale.style-1
-							.header-product-sale.d-flex
-								.avatar
-									img(src="images/avatar-1.png")
-									
-								.member-info
-									p.name Trương Bảo Anh
-									p.follow 2000 follows
-							.thumbnail-product
-								img(src="images/product-sale.jpg")
-								.overlay-content
-									h3 99 Loves
-									.love.active
-										a(href="#")
-											i.fa.fa-heart-o
-											i.fa.fa-heart
+									.sale-off
+										p 30% off
+								.in-store đã bán 99
+					.item-product-sale.col-per-3.style-1
+						.header-product-sale.d-flex
+							.avatar
+								img(src="images/avatar-1.png")
+								
+							.member-info
+								p.name Trương Bảo Anh
+								p.follow 2000 follows
+						.thumbnail-product
+							img(src="images/product-sale.jpg")
+							.overlay-content
+								h3 99 Loves
+								.love
+									a(href="#")
+										i.fa.fa-heart-o
+										i.fa.fa-heart
+						.footer-product.d-flex
+							.left-footer-product
+								h3
+									a(href="#") Nước Hoa Hồng
+								.sticky-heart +5
+										img(src="images/icon/icon-heart.png")
+							.right-footer-product
+								.price.d-flex
+									.price-detail
+										.price-old 1.300.000đ
+										.price-sale 910.000đ
+									.sale-off
+										p 30% off
+								.in-store đã bán 99
+					.item-product-sale.col-per-3.style-1
+						.header-product-sale.d-flex
+							.avatar
+								img(src="images/avatar-1.png")
+								
+							.member-info
+								p.name Trương Bảo Anh
+								p.follow 2000 follows
+						.thumbnail-product
+							img(src="images/product-sale.jpg")
+							.overlay-content
+								h3 99 Loves
+								.love.active
+									a(href="#")
+										i.fa.fa-heart-o
+										i.fa.fa-heart
+						.footer-product.d-flex
+							.left-footer-product
+								h3
+									a(href="#") Nước Hoa Hồng
+								.sticky-heart +5
+										img(src="images/icon/icon-heart.png")
+							.right-footer-product
+								.price.d-flex
+									.price-detail
+										.price-old 1.300.000đ
+										.price-sale 910.000đ
+									.sale-off
+										p 30% off
+								.in-store đã bán 99
+				.view-more
+					a(href="#") Xem thêm
+			.main-title.with-countdown
+					h2 Group 
+						span Sales
+					.countdown(data-time="2018/01/12 8:30")
+				
+			.products-sale
+				.content-product-sale.d-flex.justify-content-center
+					.item-product-sale.col-per-3.style-2
+						.header-product-sale.d-flex
+							.avatar
+								img(src="images/avatar-1.png")
+								
+							.member-info
+								p.name Trương Bảo Anh
+								p.follow 2000 follows
+						.thumbnail-product
+							img(src="images/product-sale-2.jpg")
+							.overlay-content
+								h3 99 Loves
+								.love
+									a(href="#")
+										i.fa.fa-heart-o
+										i.fa.fa-heart
+						.footer-product.d-flex
+							.left-footer-product
+								h3
+									a(href="#") Nước Hoa Hồng
+								.sticky-heart +5
+										img(src="images/icon/icon-heart.png")
+							.right-footer-product
+								.price.d-flex
+									.price-detail
+										.price-old 1.300.000đ
+										.price-sale 910.000đ
+									.sale-off
+										p 30% off
+								.in-store đã bán 99
+					.item-product-sale.col-per-3.style-2
+						.header-product-sale.d-flex
+							.avatar
+								img(src="images/avatar-1.png")
+								
+							.member-info
+								p.name Trương Bảo Anh
+								p.follow 2000 follows
+						.thumbnail-product
+							img(src="images/product-sale-2.jpg")
+							.overlay-content
+								h3 99 Loves
+								.love
+									a(href="#")
+										i.fa.fa-heart-o
+										i.fa.fa-heart
+						.footer-product.d-flex
+							.left-footer-product
+								h3
+									a(href="#") Nước Hoa Hồng
+								.sticky-heart +5
+										img(src="images/icon/icon-heart.png")
+							.right-footer-product
+								.price.d-flex
+									.price-detail
+										.price-old 1.300.000đ
+										.price-sale 910.000đ
+									.sale-off
+										p 30% off
+								.in-store đã bán 99
+					.item-product-sale.col-per-3.style-2
+						.header-product-sale.d-flex
+							.avatar
+								img(src="images/avatar-1.png")
+								
+							.member-info
+								p.name Trương Bảo Anh
+								p.follow 2000 follows
+						.thumbnail-product
+							img(src="images/product-sale-2.jpg")
+							.overlay-content
+								h3 99 Loves
+								.love.active
+									a(href="#")
+										i.fa.fa-heart-o
+										i.fa.fa-heart
+						.footer-product.d-flex
+							.left-footer-product
+								h3
+									a(href="#") Nước Hoa Hồng
+								.sticky-heart +5
+										img(src="images/icon/icon-heart.png")
+							.right-footer-product
+								.price.d-flex
+									.price-detail
+										.price-old 1.300.000đ
+										.price-sale 910.000đ
+									.sale-off
+										p 30% off
+								.in-store đã bán 99
+				.view-more
+					a(href="#") Xem thêm
+			.main-title.with-countdown
+					h2 Upcoming 
+						span Product
+					.countdown(data-time="2018/01/12 8:30")
+		.home-slide-2
+			.slide-item
+				img(src="images/slide-3.jpg")
+			.slide-item
+				img(src="images/slide-2.jpg")
+			.slide-item
+				img(src="images/slide-1.jpg")
+		.container
+			.main-title
+				h2 celebee  
+					span shop
+					img(src="images/bee.png")
+					p 6666 
+						span FOLLOWS
+			.products-sale
+				.content-product-sale.d-flex.justify-content-center
+					.item-product-sale.col-per-4.style-1
+						.header-product-sale.d-flex
+							.avatar
+								img(src="images/avatar-1.png")
+								
+							.member-info
+								p.name Trương Bảo Anh
+								p.follow 2000 follows
+						.thumbnail-product
+							img(src="images/product-sale.jpg")
+							.overlay-content
+								h3 99 Loves
+								.love
+									a(href="#")
+										i.fa.fa-heart-o
+										i.fa.fa-heart
+						.footer-product.d-flex
+							.left-footer-product
+								h3
+									a(href="#") Nước Hoa Hồng
+								.sticky-heart +5
+										img(src="images/icon/icon-heart.png")
+							.right-footer-product
+								.price.d-flex
+									.price-detail
+										.price-old 1.300.000đ
+										.price-sale 910.000đ
+									.sale-off
+										p 30% off
+								.in-store đã bán 99
+							
+					.item-product-sale.col-per-4.style-1
+						.header-product-sale.d-flex
+							.avatar
+								img(src="images/avatar-1.png")
+								
+							.member-info
+								p.name Trương Bảo Anh
+								p.follow 2000 follows
+						.thumbnail-product
+							img(src="images/product-sale.jpg")
+							.overlay-content
+								h3 99 Loves
+								.love
+									a(href="#")
+										i.fa.fa-heart-o
+										i.fa.fa-heart
+						.footer-product.d-flex
+							.left-footer-product
+								h3
+									a(href="#") Nước Hoa Hồng
+								.sticky-heart +5
+										img(src="images/icon/icon-heart.png")
+							.right-footer-product
+								.price.d-flex
+									.price-detail
+										.price-old 1.300.000đ
+										.price-sale 910.000đ
+									.sale-off
+										p 30% off
+								.in-store đã bán 99
+					.item-product-sale.col-per-4.style-1
+						.header-product-sale.d-flex
+							.avatar
+								img(src="images/avatar-1.png")
+								
+							.member-info
+								p.name Trương Bảo Anh
+								p.follow 2000 follows
+						.thumbnail-product
+							img(src="images/product-sale.jpg")
+							.overlay-content
+								h3 99 Loves
+								.love.active
+									a(href="#")
+										i.fa.fa-heart-o
+										i.fa.fa-heart
+						.footer-product.d-flex
+							.left-footer-product
+								h3
+									a(href="#") Nước Hoa Hồng
+								.sticky-heart +5
+										img(src="images/icon/icon-heart.png")
+							.right-footer-product
+								.price.d-flex
+									.price-detail
+										.price-old 1.300.000đ
+										.price-sale 910.000đ
+									.sale-off
+										p 30% off
+								.in-store đã bán 99
+					.item-product-sale.col-per-4.style-1
+						.header-product-sale.d-flex
+							.avatar
+								img(src="images/avatar-1.png")
+								
+							.member-info
+								p.name Trương Bảo Anh
+								p.follow 2000 follows
+						.thumbnail-product
+							img(src="images/product-sale.jpg")
+							.overlay-content
+								h3 99 Loves
+								.love.active
+									a(href="#")
+										i.fa.fa-heart-o
+										i.fa.fa-heart
+						.footer-product.d-flex
+							.left-footer-product
+								h3
+									a(href="#") Nước Hoa Hồng
+								.sticky-heart +5
+										img(src="images/icon/icon-heart.png")
+							.right-footer-product
+								.price.d-flex
+									.price-detail
+										.price-old 1.300.000đ
+										.price-sale 910.000đ
+									.sale-off
+										p 30% off
+								.in-store đã bán 99
+				.view-more
+					a(href="#") Xem thêm
+			.facebook-gallery
+				p.facebook-url www.facebook.com/celebee.vn
+				p.facebook-title 
+					i.fa.fa-facebook
+					| Facebook
+				.isotope-gallery
+					.item-gallery
+						img(src="images/gallery-1.png")
+					.item-gallery
+						img(src="images/gallery-3.png")
+					.item-gallery
+						img(src="images/gallery-4.png")
+					.item-gallery
+						img(src="images/gallery-5.png")
+					.item-gallery
+						img(src="images/gallery-7.png")
+					.item-gallery
+						img(src="images/gallery-2.png")
+					.item-gallery
+						img(src="images/gallery-6.png")
+					.item-gallery
+						img(src="images/gallery-8.png")
+					.item-gallery
+						img(src="images/gallery-9.png")
+
 
 
 	include includes/footer.pug

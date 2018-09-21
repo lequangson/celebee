@@ -1,0 +1,21 @@
+.footer {
+    border-top: 1px solid $color-border;
+    margin-top: 100px;
+    padding-top: 25px;
+    .col-footer {
+	  	&.about-footer {
+	  		width: 40%;
+		}
+		&.phone-footer,&.pay-footer {
+		  	width: 18%;
+		}
+		&.social-footer {
+		  	width: 24%;
+		}
+		.content-col-footer {
+			padding: 15px;
+			border-right: 1px solid $color-border;
+		}
+  	}
+  
+}
