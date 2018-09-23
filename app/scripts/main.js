@@ -11,6 +11,7 @@ $(document).ready(function() {
 
 	  $('.home-slide').slick();
 	  $('.home-slide-2').slick();
+	  $('.slide-thumbnail-product').slick();
 	  $('.member-slide').slick({
 		  dot: false,
 		  infinite: true,
@@ -46,11 +47,19 @@ $(document).ready(function() {
 		    // instead of a settings object
 		  ]
 		});
+	  $('.multi-product-slide').slick({
+		  dot: false,
+		  infinite: true,
+		  speed: 300,
+		  slidesToShow: 6,
+		  slidesToScroll: 6,
+		  vertical: true,
+		});
+	
 
     $('.page-content').each(function(index, value){
         var dateTime = $(this).find(".countdown").attr('data-time');
-        
-        console.log(dateTime);
+
         $(this).find(".countdown").countdown(dateTime, function(event) {
             $(this).html(
                 event.strftime('<ul class="list-time"><li class="cd-days"><p class="countdown-number">%D</p> </li> : <li class="cd-hours"><p class="countdown-number">%H</p></li> : <li class="cd-minutes"><p class="countdown-number">%M</p></li> : <li  class="cd-seconds"> <p class="countdown-number">%S</p></li></ul>')
@@ -63,4 +72,8 @@ $(document).ready(function() {
 	  	itemSelector: '.item-gallery',
 	  	
 	});
+	  $('.sticky-sidebar').simpleScrollFollow({
+	   
+	    limit_elem: $('.page-content')
+	  });
 });

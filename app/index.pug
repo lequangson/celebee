@@ -3,14 +3,27 @@ extends layouts/default
 block content
 	include includes/header.pug
 	.page-content
-		.home-slide
-			.slide-item
-				img(src="images/slide-1.jpg")
-			.slide-item
-				img(src="images/slide-2.jpg")
-			.slide-item
-				img(src="images/slide-1.jpg")
 		.container
+			.sticky-sidebar
+				.cart-history
+					h3 Lịch sử
+					.list-product-history
+						.item
+							img(src="images/hist-item-1.jpg")
+						.item
+							img(src="images/hist-item-2.jpg")
+						.item
+							img(src="images/hist-item-4.jpg")
+					p.cart-number 
+						a(href="#") Giỏ hàng
+						span 1
+			.home-slide
+				.slide-item
+					img(src="images/slide-1.jpg")
+				.slide-item
+					img(src="images/slide-2.jpg")
+				.slide-item
+					img(src="images/slide-1.jpg")
 			.member-slider
 				.main-title
 					h2 HOT 
@@ -79,6 +92,118 @@ block content
 					span Diệp Anh 
 					| sẽ diễn ra trong
 				.countdown(data-time="2018/01/01 8:30")
+				.livestream-block.d-flex.flex-wrap
+					.live-area.d-flex
+						img(src="images/live-area.png")
+						.overlay-play
+							img(src="images/icon/icon-video.png")
+							.title-live
+								| Xem 
+								span livestream 
+								| nhận mã giảm giá
+					.product-area.d-flex
+						.left-product-area
+							.thumbnail-product.slide-thumbnail-product
+								.slide-item
+									img(src="images/product-sale.jpg")
+									.overlay-content
+										| Xem stream nhận mã giảm giá
+								.slide-item
+									img(src="images/product-sale-2.jpg")
+									.overlay-content
+										| Xem stream nhận mã giảm giá
+								.slide-item
+									img(src="images/product-sale.jpg")
+									.overlay-content
+										| Xem stream nhận mã giảm giá
+							.footer-product
+								
+								h3
+									a(href="#") Nước Hoa Hồng
+								
+								.price.d-flex
+									.price-detail
+										.price-old 1.300.000đ
+										.price-sale 910.000đ
+									.sale-off
+										p 30% off
+								.in-store đã bán 99
+								a(href="#").add-cart Mua ngay
+
+						.right-product-area
+							.multi-product-slide
+								.slide-item.d-flex
+									.avatar
+										img(src="images/avatar-1.png")
+									.product-name Áo vest
+									.date-time
+										p 16/08
+										p 18.00 - 10.00
+								.slide-item.d-flex
+									.avatar
+										img(src="images/avatar-1.png")
+									.product-name Áo vest
+									.date-time
+										p 16/08
+										p 18.00 - 10.00
+								.slide-item.d-flex
+									.avatar
+										img(src="images/avatar-1.png")
+									.product-name Áo vest
+									.date-time
+										p 16/08
+										p 18.00 - 10.00
+								.slide-item.d-flex
+									.avatar
+										img(src="images/avatar-1.png")
+									.product-name Áo vest
+									.date-time
+										p 16/08
+										p 18.00 - 10.00
+								.slide-item.d-flex
+									.avatar
+										img(src="images/avatar-1.png")
+									.product-name Áo vest
+									.date-time
+										p 16/08
+										p 18.00 - 10.00
+								.slide-item.d-flex
+									.avatar
+										img(src="images/avatar-1.png")
+									.product-name Áo vest
+									.date-time
+										p 16/08
+										p 18.00 - 10.00
+								.slide-item.d-flex
+									.avatar
+										img(src="images/avatar-1.png")
+									.product-name Áo vest
+									.date-time
+										p 16/08
+										p 18.00 - 10.00
+								.slide-item.d-flex
+									.avatar
+										img(src="images/avatar-1.png")
+									.product-name Áo vest
+									.date-time
+										p 16/08
+										p 18.00 - 10.00
+								.slide-item.d-flex
+									.avatar
+										img(src="images/avatar-1.png")
+									.product-name Áo vest
+									.date-time
+										p 16/08
+										p 18.00 - 10.00
+								.slide-item.d-flex
+									.avatar
+										img(src="images/avatar-1.png")
+									.product-name Áo vest
+									.date-time
+										p 16/08
+										p 18.00 - 10.00
+
+
 			.hot-trends
 				.main-title
 					h2 HOT 
@@ -382,14 +507,13 @@ block content
 					h2 Upcoming 
 						span Product
 					.countdown(data-time="2018/01/12 8:30")
-		.home-slide-2
-			.slide-item
-				img(src="images/slide-3.jpg")
-			.slide-item
-				img(src="images/slide-2.jpg")
-			.slide-item
-				img(src="images/slide-1.jpg")
-		.container
+			.home-slide-2
+				.slide-item
+					img(src="images/slide-3.jpg")
+				.slide-item
+					img(src="images/slide-2.jpg")
+				.slide-item
+					img(src="images/slide-1.jpg")
 			.main-title
 				h2 celebee  
 					span shop
@@ -545,7 +669,4 @@ block content
 						img(src="images/gallery-8.png")
 					.item-gallery
 						img(src="images/gallery-9.png")
-
-
-
 	include includes/footer.pug

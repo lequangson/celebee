@@ -593,5 +593,48 @@
 		display: none;
 	}
 }
+.page-content {
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+		position: relative;
+		.sticky-sidebar {
+			position: absolute;
+			top: 30px;
+			width: 90px;
+			right: -100px;
+			z-index: 9999;
+			background-color: $white;
+			border-radius: 6px;
+			border: 1px solid $color-border;
+			text-align: center;
+			h3 {
+				font-size: 12px;
+				text-transform: uppercase;
+				color: #000;
+				margin-top: 5px;
+			}
+			.list-product-history {
+				.item {
+					margin-top: 5px;
+				}
+			}
+			.cart-number {
+				border-top: 1px solid $color-border;
+				margin-top: 10px;
+				padding-top: 10px;
+				font-size: 12px;
+				a {
+					color: $color-link;
+					margin-right: 20px;
+					&:hover {
+						color: $color-primary;
+					}
+				}
+			}
+		}
+	}
+}
+
 
 
