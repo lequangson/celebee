@@ -4,10 +4,88 @@
 	border-bottom: 1px solid $color-border;
 	margin-bottom: 30px;
 	.avatar {
+		position: relative;
+		margin-right: 30px;
 		img {
-			width: 350px;
-			height: 350px;
+			width: 320px;
+			height: 320px;
 			border-radius: 50%;
+		}
+		&.active {
+			
+			img { 
+				border: 5px solid $color-primary;
+			}
+		}
+		.live-text {
+			position: absolute;
+		    left: 50%;
+		    bottom: -10px;
+		    transform: translateX(-50%);
+		    color: #fff;
+		    background: #ed1863;
+		    padding: 5px 10px;
+		    border-radius: 4px;
+		    &:before {
+		    	content: "• ";
+			    color: #fff;
+			    left: 3px;
+			    top: 50%;
+
+		    }
+		}
+	}
+	.user-info-detail {
+		.user-name {
+			font-size: 26px;
+			font-weight: 600;
+			margin-bottom: 10px;
+		}
+		.social-url {
+			margin-top: 10px;
+			.item-url {
+				a {
+					font-size: 20px;
+					font-style: italic;
+					color: $color-primary;
+				}
+			}
+		}
+		.social-follow {
+			margin-top: 50px;
+			.follow-item {
+				margin-right: 65px;
+				.icon-follow {
+					float: left;
+					margin-right: 10px;
+					img {
+						max-width: 60px;
+					}
+				}
+				.number-follow {
+					float: left;
+					font-size: 26px;
+					font-weight: 600;
+					padding-top: 30px;
+				}
+				.follow-description {
+					width: 170px;
+					height: 60px;
+					margin-top: 10px;
+					text-align: center;
+					border-radius: 8px;
+					border: 1px solid $color-primary;
+					line-height: 60px;
+					color: $color-primary;
+					font-size: 20px;
+					
+					text-transform: uppercase;
+					span {
+						font-weight: bold;
+						margin-left: 5px;
+					}
+				}
+			}
 		}
 	}
 }
