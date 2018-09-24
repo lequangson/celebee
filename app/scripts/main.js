@@ -76,4 +76,29 @@ $(document).ready(function() {
 	   
 	    limit_elem: $('.page-content')
 	  });
+	    var $backToTop = $('.back-to-top');
+
+           
+            $backToTop.click(function(event) {
+            	console.log('sàdsdfsd');
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: '0px'
+                }, 800);
+            });
+          
+         var $backToBottom = $('.back-to-bottom');
+        
+            $backToBottom.click(function(event) {
+            	console.log('sàdsdfsd');
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop:$(document).height()
+                }, 800);
+            });
+             
+         
+
 });

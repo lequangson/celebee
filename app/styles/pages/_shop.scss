@@ -1,0 +1,13 @@
+.header-shop {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid $color-border;
+	margin-bottom: 30px;
+	.avatar {
+		img {
+			width: 350px;
+			height: 350px;
+			border-radius: 50%;
+		}
+	}
+}

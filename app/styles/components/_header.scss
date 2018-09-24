@@ -594,46 +594,78 @@
 	}
 }
 .page-content {
-	.container {
-		padding-left: 0;
-		padding-right: 0;
-		position: relative;
-		.sticky-sidebar {
-			position: absolute;
-			top: 30px;
-			width: 90px;
-			right: -100px;
-			z-index: 9999;
-			background-color: $white;
-			border-radius: 6px;
-			border: 1px solid $color-border;
-			text-align: center;
-			h3 {
-				font-size: 12px;
-				text-transform: uppercase;
-				color: #000;
-				margin-top: 5px;
-			}
-			.list-product-history {
-				.item {
+	.main {
+		.container {
+			padding-left: 0;
+			padding-right: 0;
+			position: relative;
+			.sticky-sidebar {
+				position: absolute;
+				top: 0;
+				width: 90px;
+				right: -100px;
+				z-index: 9999;
+
+				text-align: center;
+				.cart-history {
+					background-color: $white;
+					border-radius: 6px;
+					border: 1px solid $color-border;
+					h3 {
+					font-size: 12px;
+					text-transform: uppercase;
+					color: #000;
 					margin-top: 5px;
+					}
+					.list-product-history {
+						.item {
+							margin-top: 5px;
+						}
+					}
+					.cart-number {
+						border-top: 1px solid $color-border;
+						margin-top: 10px;
+						padding-top: 10px;
+						font-size: 12px;
+						a {
+							color: $color-link;
+							margin-right: 20px;
+							&:hover {
+								color: $color-primary;
+							}
+						}
+					}
 				}
-			}
-			.cart-number {
-				border-top: 1px solid $color-border;
-				margin-top: 10px;
-				padding-top: 10px;
-				font-size: 12px;
-				a {
-					color: $color-link;
-					margin-right: 20px;
+				.back-to-button {
+					display: inline-block;
+					width: 43px;
+					
+					height: 43px;
+					line-height: 48px;
+					border: 1px solid $color-border;
+					margin-left: -3px;
+					margin-right: -3px;
+					cursor: pointer;
+					i {
+						font-size: 26px;
+						@include transition(all 0.25s); 
+					}
 					&:hover {
-						color: $color-primary;
+						i {
+							color: $color-primary;
+						}
+					}
+					&.back-to-top {
+						border-radius: 6px 0 0 6px;
+					}
+					&.back-to-bottom {
+						border-radius: 0 6px 6px 0;
 					}
 				}
 			}
 		}
 	}
+	
 }
 
 
