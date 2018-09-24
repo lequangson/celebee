@@ -1,0 +1,89 @@
+/* Table of contents */
+
+/*
+ *  1. Global
+ *  2. Colors
+ *  3. Typography
+ *  4. Space
+ *  5. Grid
+ *  6. Media query
+ *  7. Misc
+ *
+ */
+
+/* 1. Global */
+$base: 16px;
+$type-scale: 1.25;
+$line-height-base: 1.4;
+
+/* 2. Colors */
+$white: #fff;
+$black: #000;
+$pink: #ed1863;
+$gray: #9d9d9d;
+$yellow-dark: #eaaa00;
+
+$chambray: #3b5998;
+$parsley: #134d13;
+$grenadier: #d43900;
+$bright-red: #b50000;
+$blue-dark: #060a1c;
+$blue-sea: #2f8fcc;
+$facebook-color: #3b5999;
+$twitter-color: #55acee;
+
+$emperor: #393939;
+$porridge: #f2efec;
+$background-sidebar: #f4f4f4;
+
+$color-primary: $pink;
+$color-secondary: #010101;
+$color-headding: $black;
+$color-link : $gray;
+$color-info: $chambray;
+$color-success: $parsley;
+$color-warning: $grenadier;
+$color-danger: $bright-red;
+
+$body-bg: $porridge;
+$body-color: #555;
+$body-color-1: $emperor;
+$link-color: $chambray;
+$color-border: #cbcbcb;
+/* 3. Typography */
+$font-sans-serif: 'Open Sans', sans-serif;
+$font-serif: Lora, serif;
+// $font-special: Damion, cursive; /* This is optional, remove if nessesary */
+
+$font-family-body: $font-sans-serif;
+$font-family-secondary: 'SanFranciscoDisplay-Light';
+$font-family-teriary: 'SanFranciscoDisplay-Semibold';
+// $font-family-heding: $font-serif;
+
+$font-size-h1: ($base * $type-scale * $type-scale * $type-scale * $type-scale);
+$font-size-h2: ($base * $type-scale * $type-scale * $type-scale);
+$font-size-h3: ($base * $type-scale * $type-scale);
+$font-size-h4: ($base * $type-scale);
+$font-size-h5: $base;
+$font-size-h6: ($base / $type-scale);
+$font-size: $base;
+
+$font-weight-base: 400;
+
+/* 4. Space */
+$space-xs: ($base / 4);
+$space-sm: ($base / 2);
+$space-md: $base;
+$space-lg: ($base * 2);
+$space-xlg: ($base * 4);
+
+/* 5. Grid */
+$gutter: 15px;
+
+/* 6. Media Query */
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$extra-lagre: 1200px;
+/* 7. Misc */
+$text-shadow: 2px 2px 2px $body-color;

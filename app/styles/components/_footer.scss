@@ -1,0 +1,99 @@
+.footer {
+    border-top: 1px solid $color-border;
+    margin-top: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    .col-footer {
+    	border-right: 1px solid $color-border;
+	  	&.about-footer {
+	  		width: 35%;
+	  		img {
+	  			max-height: 101px;
+	  			margin-right: 30px;
+	  		}
+		}
+		&.phone-footer {
+			width: 18%;
+			.hotline {
+				color: $color-primary;
+				margin-top: 30px;
+				font-size: 14px;
+			}
+		}
+		&.pay-footer {
+		  	width: 20%; 
+		  	.cart-line-1 {
+		  		margin-bottom: 10px;
+		  	}
+		  	.cart-line-2 {
+		  		img {
+		  			margin-right: 5px;
+		  		}
+		  	}
+		  	
+		  	span {
+  				color: $color-primary;
+  			}
+		}
+		&.social-footer {
+		  	width: calc(27% - 3px);
+		  	.social-url {
+		  		i {
+		  			font-size: 14px;
+		  			width: 20px;
+		  			height: 20px;
+		  			display: inline-block;
+		  			text-align: center;
+		  			line-height: 20px;
+		  			border-radius: 4px;
+		  			background: $color-primary;
+		  			color: $white;
+		  			margin-right: 10px;
+		  		}
+		  	}
+		  	.app-url {
+		  		img {
+		  			margin-right: 20px;
+		  		}
+		  	}
+		}
+		.content-col-footer {
+			padding: 15px;
+			
+		}
+		&:last-child {
+			
+			border-right: none;
+			
+		}
+		p {
+			font-size: 12px;
+		}
+		@media(max-width: 991px) {
+			width: 50%!important;
+			border-right: none;
+		}
+		@media(max-width: 767px) {
+			width: 100%!important;
+			border-right: none;
+		}
+  	}
+  	.footer-title {
+  		font-size: 14px;
+  		font-weight: 600;
+  		text-transform: uppercase;
+  		color: $color-primary;
+  		margin-bottom: 30px;
+  	}
+  	.footer-title-last{
+		margin-top: 30px;
+		margin-bottom: 15px;
+
+  	}
+  	.footer-sub-title {
+  		font-size: 14px;
+  		font-weight: 600;
+  		text-transform: uppercase;
+  		color: #000;
+  	}
+}

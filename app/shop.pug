@@ -1,0 +1,176 @@
+extends layouts/default
+
+block content
+	include includes/header.pug
+
+	.page-content
+		.header-shop
+			.container
+				.user-info.d-flex
+					.avatar.active
+						img(src="images/member-slide-2.png")
+						.live-text LIVE
+					.user-info-detail
+						.user-name Kim Hee Song
+						.description Ca sĩ, nhạc sĩ, diễn viên
+						.social-url
+							.item-url
+								a(href="#") www.instagram.com/Kim Hee Song
+							.item-url
+								a(href="#") www.facebook.com/Kim Hee Song
+						.social-follow.d-flex
+							.follow-item
+								.icon-follow
+									img(src="images/icon-follow-1.png") 
+								.number-follow 2000
+								.follow-description
+									i.fa.fa-check
+									span Follow
+							.follow-item
+								.icon-follow
+									img(src="images/icon-follow-2.png") 
+								.number-follow 2000
+								.follow-description
+									| Go
+									span Facebook
+							.follow-item
+								.icon-follow
+									img(src="images/icon-follow-3.png") 
+								.number-follow 2000
+								.follow-description
+									| Go
+									span Instagram
+		.main
+			.container
+				.sticky-sidebar
+					.cart-history
+						h3 Lịch sử
+						.list-product-history
+							.item
+								img(src="images/hist-item-1.jpg")
+							.item
+								img(src="images/hist-item-2.jpg")
+							.item
+								img(src="images/hist-item-4.jpg")
+						p.cart-number 
+							a(href="#") Giỏ hàng
+							span 1
+					hr
+					.back-to-button.back-to-top
+						i.fa.fa-angle-up
+					.back-to-button.back-to-bottom
+						i.fa.fa-angle-down
+			
+				.live-colection
+					.livestream-block.d-flex.flex-wrap
+						.live-area.d-flex
+							img(src="images/live-area.png")
+							.overlay-play
+								img(src="images/icon/icon-video.png")
+								.title-live
+									| Xem 
+									span livestream 
+									| nhận mã giảm giá
+						.product-area.d-flex
+							.left-product-area
+								.thumbnail-product.slide-thumbnail-product
+									.slide-item
+										img(src="images/product-sale.jpg")
+										.overlay-content
+											| Xem stream nhận mã giảm giá
+									.slide-item
+										img(src="images/product-sale-2.jpg")
+										.overlay-content
+											| Xem stream nhận mã giảm giá
+									.slide-item
+										img(src="images/product-sale.jpg")
+										.overlay-content
+											| Xem stream nhận mã giảm giá
+								.footer-product
+									
+									h3
+										a(href="#") Nước Hoa Hồng
+									
+									.price.d-flex
+										.price-detail
+											.price-old 1.300.000đ
+											.price-sale 910.000đ
+										.sale-off
+											p 30% off
+									.in-store đã bán 99
+									a(href="#").add-cart Mua ngay
+
+							.right-product-area
+								.multi-product-slide
+									.slide-item.d-flex
+										.avatar
+											img(src="images/avatar-1.png")
+										.product-name Áo vest
+										.date-time
+											p 16/08
+											p 18.00 - 10.00
+									.slide-item.d-flex
+										.avatar.active
+											img(src="images/avatar-1.png")
+											span Live
+										.product-name Áo vest
+										.date-time
+											p 16/08
+											p 18.00 - 10.00
+									.slide-item.d-flex
+										.avatar
+											img(src="images/avatar-1.png")
+										.product-name Áo vest
+										.date-time
+											p 16/08
+											p 18.00 - 10.00
+									.slide-item.d-flex
+										.avatar
+											img(src="images/avatar-1.png")
+										.product-name Áo vest
+										.date-time
+											p 16/08
+											p 18.00 - 10.00
+									.slide-item.d-flex
+										.avatar
+											img(src="images/avatar-1.png")
+										.product-name Áo vest
+										.date-time
+											p 16/08
+											p 18.00 - 10.00
+									.slide-item.d-flex
+										.avatar
+											img(src="images/avatar-1.png")
+										.product-name Áo vest
+										.date-time
+											p 16/08
+											p 18.00 - 10.00
+									.slide-item.d-flex
+										.avatar
+											img(src="images/avatar-1.png")
+										.product-name Áo vest
+										.date-time
+											p 16/08
+											p 18.00 - 10.00
+									.slide-item.d-flex
+										.avatar
+											img(src="images/avatar-1.png")
+										.product-name Áo vest
+										.date-time
+											p 16/08
+											p 18.00 - 10.00
+									.slide-item.d-flex
+										.avatar
+											img(src="images/avatar-1.png")
+										.product-name Áo vest
+										.date-time
+											p 16/08
+											p 18.00 - 10.00
+									.slide-item.d-flex
+										.avatar
+											img(src="images/avatar-1.png")
+										.product-name Áo vest
+										.date-time
+											p 16/08
+											p 18.00 - 10.00
+	include includes/footer.pug
