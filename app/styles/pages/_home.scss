@@ -8,6 +8,10 @@
 			}
 		}
 	}
+	.slick-arrow {
+		@include transition(all 0.3s);
+		opacity: 0;
+	}
 	.slick-prev {
 		position: absolute;
 		top: 50%;
@@ -72,6 +76,11 @@
 		}
 		&:focus {
 			outline: none;
+		}
+	}
+	&:hover {
+		.slick-arrow {
+			opacity: 1;
 		}
 	}
 }
@@ -532,8 +541,13 @@
 		font-weight: bold;
 		li {
 			display: inline-block;
+			padding: 1px 5px;
+			border-radius: 4px;
+			background-color: $color-primary;
 			p {
-				color: $color-primary;
+				color: $white;
+				margin-bottom: 0;
+				letter-spacing: 2px;
 			}
 		}
 	}

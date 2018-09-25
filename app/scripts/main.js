@@ -57,10 +57,10 @@ $(document).ready(function() {
 		});
 	
 
-    $('.page-content').each(function(index, value){
-        var dateTime = $(this).find(".countdown").attr('data-time');
+    $('.countdown').each(function(index, value){
+        var dateTime = $(this).attr('data-time');
 
-        $(this).find(".countdown").countdown(dateTime, function(event) {
+        $(this).countdown(dateTime, function(event) {
             $(this).html(
                 event.strftime('<ul class="list-time"><li class="cd-days"><p class="countdown-number">%D</p> </li> : <li class="cd-hours"><p class="countdown-number">%H</p></li> : <li class="cd-minutes"><p class="countdown-number">%M</p></li> : <li  class="cd-seconds"> <p class="countdown-number">%S</p></li></ul>')
             );

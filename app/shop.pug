@@ -184,6 +184,8 @@ block content
 							a(href="#tab2") Product Renew
 						li
 							a(href="#tab3") Upcomming Product
+						li
+							.countdown(data-time="2019/01/02 8:30")
 					#tab1.tab-content
 						ul.tabs
 							li
@@ -192,7 +194,7 @@ block content
 								a(href="#tab1-2") New Product 
 							li
 								a(href="#tab1-3") Hight Discount
-						#tab1-1
+						#tab1-1.tab-content
 							.products-sale
 								.content-product-sale.d-flex.justify-content-center
 									.item-product-sale.col-per-4.style-1
@@ -317,13 +319,90 @@ block content
 														p 30% off
 												.in-store đã bán 99
 				
-						#tab1-2
-							|  sddfsd
-						#tab1-3
-							| sdfsdfsdf
+						#tab1-2.tab-content
+							|  tab content 2
+						#tab1-3.tab-content
+							|  tab content 4
 					#tab2.tab-content
 						p test-tab-2
 					#tab3.tab-content
-						p test-tab-3
+						ul.tabs
+							li
+								a(href="#tab3-1") Phổ biến
+							li
+								a(href="#tab3-2") Giá thấp 
+						#tab3-1.tab-content
+							.list-products.d-flex
+								.item-product-list.col-per-2.d-flex
+									.thumbnail-product
+										.avatar
+											img(src="images/avatar-1.png")
+										.thumbnail
+											img(src="images/product-1.jpg")
+									.info-product
+										h3.title-product
+											a(href="#") Kem duong da
+										.excerpt
+											| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et  
+										.price 330.000 đ
+										p Giá niêm yết
+										.order
+											a(href="#") Đặt hàng trước
+											span để nhận ưu đãi 5%
+								.item-product-list.col-per-2.d-flex
+									.thumbnail-product
+										.avatar
+											img(src="images/avatar-1.png")
+										.thumbnail
+											img(src="images/product-1.jpg")
+									.info-product
+										h3.title-product
+											a(href="#") Kem duong da
+										.excerpt
+											| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et  
+										.price 330.000 đ
+										p Giá niêm yết
+										.order
+											a(href="#") Đặt hàng trước
+											span để nhận ưu đãi 5%
+							.list-products.d-flex
+								.item-product-list.col-per-2.d-flex
+									.thumbnail-product
+										.avatar
+											img(src="images/avatar-1.png")
+										.thumbnail
+											img(src="images/product-1.jpg")
+									.info-product
+										h3.title-product
+											a(href="#") Kem duong da
+										.excerpt
+											| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et  
+										.price 330.000 đ
+										p Giá niêm yết
+										.order
+											a(href="#") Đặt hàng trước
+											span để nhận ưu đãi 5%
+								.item-product-list.col-per-2.d-flex
+									.thumbnail-product
+										.avatar
+											img(src="images/avatar-1.png")
+										.thumbnail
+											img(src="images/product-1.jpg")
+									.info-product
+										h3.title-product
+											a(href="#") Kem duong da
+										.excerpt
+											| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et  
+										.price 330.000 đ
+										p Giá niêm yết
+										.order
+											a(href="#") Đặt hàng trước
+											span để nhận ưu đãi 5%
+
+
+
+
+
+
 
 	include includes/footer.pug
