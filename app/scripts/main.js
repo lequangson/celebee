@@ -57,10 +57,10 @@ $(document).ready(function() {
 		});
 	
 
-    $('.page-content').each(function(index, value){
-        var dateTime = $(this).find(".countdown").attr('data-time');
+    $('.countdown').each(function(index, value){
+        var dateTime = $(this).attr('data-time');
 
-        $(this).find(".countdown").countdown(dateTime, function(event) {
+        $(this).countdown(dateTime, function(event) {
             $(this).html(
                 event.strftime('<ul class="list-time"><li class="cd-days"><p class="countdown-number">%D</p> </li> : <li class="cd-hours"><p class="countdown-number">%H</p></li> : <li class="cd-minutes"><p class="countdown-number">%M</p></li> : <li  class="cd-seconds"> <p class="countdown-number">%S</p></li></ul>')
             );
@@ -99,6 +99,40 @@ $(document).ready(function() {
                 }, 800);
             });
              
-         
+         $('ul.tabs').each(function(){
+    // For each set of tabs, we want to keep track of
+    // which tab is active and it's associated content
+	    var $active, $content, $links = $(this).find('a');
+
+	    // If the location.hash matches one of the links, use that as the active tab.
+	    // If no match is found, use the first link as the initial active tab.
+	    $active = $($links.filter('[href="'+location.hash+'"]')[0] || $links[0]);
+	    $active.addClass('active');
+
+	    $content = $($active[0].hash);
+
+	    // Hide the remaining content
+	    $links.not($active).each(function () {
+	        $(this.hash).hide();
+	    });
+
+	    // Bind the click event handler
+	    $(this).on('click', 'a', function(e){
+	        // Make the old tab inactive.
+	        $active.removeClass('active');
+	        $content.hide();
+
+	        // Update the variables with the new link and content
+	        $active = $(this);
+	        $content = $(this.hash);
+
+	        // Make the tab active.
+	        $active.addClass('active');
+	        $content.show();
+
+	        // Prevent the anchor's default click action
+	        e.preventDefault();
+	    });
+	});
 
 });

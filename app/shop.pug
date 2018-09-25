@@ -23,22 +23,25 @@ block content
 								.icon-follow
 									img(src="images/icon-follow-1.png") 
 								.number-follow 2000
+								.clearfix
 								.follow-description
-									i.fa.fa-check
+									i.fa.fa-check 
 									span Follow
 							.follow-item
 								.icon-follow
 									img(src="images/icon-follow-2.png") 
 								.number-follow 2000
+								.clearfix
 								.follow-description
-									| Go
+									| Go 
 									span Facebook
 							.follow-item
 								.icon-follow
 									img(src="images/icon-follow-3.png") 
 								.number-follow 2000
+								.clearfix
 								.follow-description
-									| Go
+									| Go 
 									span Instagram
 		.main
 			.container
@@ -173,4 +176,233 @@ block content
 										.date-time
 											p 16/08
 											p 18.00 - 10.00
+				.tab-products
+					ul.tabs
+						li
+							a(href="#tab1") Sale Item
+						li
+							a(href="#tab2") Product Renew
+						li
+							a(href="#tab3") Upcomming Product
+						li
+							.countdown(data-time="2019/01/02 8:30")
+					#tab1.tab-content
+						ul.tabs
+							li
+								a(href="#tab1-1") Popular
+							li
+								a(href="#tab1-2") New Product 
+							li
+								a(href="#tab1-3") Hight Discount
+						#tab1-1.tab-content
+							.products-sale
+								.content-product-sale.d-flex.justify-content-center
+									.item-product-sale.col-per-4.style-1
+										.header-product-sale.d-flex
+											.avatar
+												img(src="images/avatar-1.png")
+												
+											.member-info
+												p.name Trương Bảo Anh
+												p.follow 2000 follows
+										.thumbnail-product
+											img(src="images/product-sale.jpg")
+											.overlay-content
+												h3 99 Loves
+												.love
+													a(href="#")
+														i.fa.fa-heart-o
+														i.fa.fa-heart
+										.footer-product.d-flex
+											.left-footer-product
+												h3
+													a(href="#") Nước Hoa Hồng
+												.sticky-heart +5
+														img(src="images/icon/icon-heart.png")
+											.right-footer-product
+												.price.d-flex
+													.price-detail
+														.price-old 1.300.000đ
+														.price-sale 910.000đ
+													.sale-off
+														p 30% off
+												.in-store đã bán 99
+											
+									.item-product-sale.col-per-4.style-1
+										.header-product-sale.d-flex
+											.avatar
+												img(src="images/avatar-1.png")
+												
+											.member-info
+												p.name Trương Bảo Anh
+												p.follow 2000 follows
+										.thumbnail-product
+											img(src="images/product-sale.jpg")
+											.overlay-content
+												h3 99 Loves
+												.love
+													a(href="#")
+														i.fa.fa-heart-o
+														i.fa.fa-heart
+										.footer-product.d-flex
+											.left-footer-product
+												h3
+													a(href="#") Nước Hoa Hồng
+												.sticky-heart +5
+														img(src="images/icon/icon-heart.png")
+											.right-footer-product
+												.price.d-flex
+													.price-detail
+														.price-old 1.300.000đ
+														.price-sale 910.000đ
+													.sale-off
+														p 30% off
+												.in-store đã bán 99
+									.item-product-sale.col-per-4.style-1
+										.header-product-sale.d-flex
+											.avatar
+												img(src="images/avatar-1.png")
+												
+											.member-info
+												p.name Trương Bảo Anh
+												p.follow 2000 follows
+										.thumbnail-product
+											img(src="images/product-sale.jpg")
+											.overlay-content
+												h3 99 Loves
+												.love.active
+													a(href="#")
+														i.fa.fa-heart-o
+														i.fa.fa-heart
+										.footer-product.d-flex
+											.left-footer-product
+												h3
+													a(href="#") Nước Hoa Hồng
+												.sticky-heart +5
+														img(src="images/icon/icon-heart.png")
+											.right-footer-product
+												.price.d-flex
+													.price-detail
+														.price-old 1.300.000đ
+														.price-sale 910.000đ
+													.sale-off
+														p 30% off
+												.in-store đã bán 99
+									.item-product-sale.col-per-4.style-1
+										.header-product-sale.d-flex
+											.avatar
+												img(src="images/avatar-1.png")
+												
+											.member-info
+												p.name Trương Bảo Anh
+												p.follow 2000 follows
+										.thumbnail-product
+											img(src="images/product-sale.jpg")
+											.overlay-content
+												h3 99 Loves
+												.love.active
+													a(href="#")
+														i.fa.fa-heart-o
+														i.fa.fa-heart
+										.footer-product.d-flex
+											.left-footer-product
+												h3
+													a(href="#") Nước Hoa Hồng
+												.sticky-heart +5
+														img(src="images/icon/icon-heart.png")
+											.right-footer-product
+												.price.d-flex
+													.price-detail
+														.price-old 1.300.000đ
+														.price-sale 910.000đ
+													.sale-off
+														p 30% off
+												.in-store đã bán 99
+				
+						#tab1-2.tab-content
+							|  tab content 2
+						#tab1-3.tab-content
+							|  tab content 4
+					#tab2.tab-content
+						p test-tab-2
+					#tab3.tab-content
+						ul.tabs
+							li
+								a(href="#tab3-1") Phổ biến
+							li
+								a(href="#tab3-2") Giá thấp 
+						#tab3-1.tab-content
+							.list-products.d-flex
+								.item-product-list.col-per-2.d-flex
+									.thumbnail-product
+										.avatar
+											img(src="images/avatar-1.png")
+										.thumbnail
+											img(src="images/product-1.jpg")
+									.info-product
+										h3.title-product
+											a(href="#") Kem duong da
+										.excerpt
+											| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et  
+										.price 330.000 đ
+										p Giá niêm yết
+										.order
+											a(href="#") Đặt hàng trước
+											span để nhận ưu đãi 5%
+								.item-product-list.col-per-2.d-flex
+									.thumbnail-product
+										.avatar
+											img(src="images/avatar-1.png")
+										.thumbnail
+											img(src="images/product-1.jpg")
+									.info-product
+										h3.title-product
+											a(href="#") Kem duong da
+										.excerpt
+											| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et  
+										.price 330.000 đ
+										p Giá niêm yết
+										.order
+											a(href="#") Đặt hàng trước
+											span để nhận ưu đãi 5%
+							.list-products.d-flex
+								.item-product-list.col-per-2.d-flex
+									.thumbnail-product
+										.avatar
+											img(src="images/avatar-1.png")
+										.thumbnail
+											img(src="images/product-1.jpg")
+									.info-product
+										h3.title-product
+											a(href="#") Kem duong da
+										.excerpt
+											| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et  
+										.price 330.000 đ
+										p Giá niêm yết
+										.order
+											a(href="#") Đặt hàng trước
+											span để nhận ưu đãi 5%
+								.item-product-list.col-per-2.d-flex
+									.thumbnail-product
+										.avatar
+											img(src="images/avatar-1.png")
+										.thumbnail
+											img(src="images/product-1.jpg")
+									.info-product
+										h3.title-product
+											a(href="#") Kem duong da
+										.excerpt
+											| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et  
+										.price 330.000 đ
+										p Giá niêm yết
+										.order
+											a(href="#") Đặt hàng trước
+											span để nhận ưu đãi 5%
+
+
+
+
+
+
+
 	include includes/footer.pug

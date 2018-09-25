@@ -96,7 +96,7 @@
 							opacity: 0;
 							text-align: center;
 							padding: 2px 5px;
-							width: 60%;
+							width: 30%;
 							z-index: 10;
 							@include rounded(4px);
 							@include transition(all 0.3s);
@@ -167,7 +167,7 @@
 		}
 	}
 	.phone {
-		width: 18%;
+		width: calc(18% - 40px);
 		@include rounded(30px);
 		margin-top: 19px;
 		flex-wrap: wrap;
@@ -213,6 +213,8 @@
 			display: inline-block;
 			vertical-align: middle;
 			color: $color-primary;
+			line-height: 46px;
+			font-weight: 600;
 			&:hover {
 				text-decoration: none;
 			}
@@ -286,13 +288,19 @@
 							background-color: $white;
 							color: $color-primary;
 							padding: 10px;
+							padding-left: 30px;
 							display: block;
 							position: relative;
 							&:before {
-								content: "• ";
-  								color: $color-primary;
-  								left: 3px;
+								content: "";
+  								position: absolute;
+  								width: 10px;
+  								height: 10px;
+  								border-radius: 50%;
+  								background:$color-primary;
+  								left: 10px;
   								top: 50%;
+  								transform: translateY(-50%);
 							}
 						}
 
