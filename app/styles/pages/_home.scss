@@ -954,6 +954,14 @@
 					left: 0;
 					top: 50px;
 				}
+				.review-count {
+					position: absolute;
+					left: 0;
+					top: 55px;
+					i {
+						color: $color-primary;
+					}
+				}
 			}
 			.right-footer-product {
 			

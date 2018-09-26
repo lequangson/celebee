@@ -217,8 +217,12 @@ block content
 											.left-footer-product
 												h3
 													a(href="#") Nước Hoa Hồng
-												.sticky-heart +5
-														img(src="images/icon/icon-heart.png")
+												.review-count
+													i.fa.fa-star
+													i.fa.fa-star
+													i.fa.fa-star
+													i.fa.fa-star
+													i.fa.fa-star-o
 											.right-footer-product
 												.price.d-flex
 													.price-detail
@@ -325,7 +329,47 @@ block content
 							|  tab content 4
 					#tab2.tab-content
 						.products-review
-							
+							.item-review
+								.header-review
+									h2 
+										span 1.
+										| Kem dưỡng ẩm
+									.review-info.d-flex
+										.review-count
+											i.fa.fa-star
+											i.fa.fa-star
+											i.fa.fa-star
+											i.fa.fa-star
+											i.fa.fa-star-o
+										.rating-count
+											| 588 Ratings
+										.review-number
+											| 25 Views
+								.title-review.d-flex
+									h2 Review Detail
+									h2 Your Review
+								.review-detail.d-flex
+									.thumbnail
+										img(src="images/review-thumb.jpg")
+									.review-average
+										.average 4.2
+										.review-count
+											i.fa.fa-star
+											i.fa.fa-star
+											i.fa.fa-star
+											i.fa.fa-star
+											i.fa.fa-star-o
+									.rating-block
+										h3 Based on 588 Ratings
+										.progress-review.d-flex
+											.left 5 star
+											.middle
+												.progress-bar( role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="5" )
+											.right 355
+
+
+
+
 					#tab3.tab-content
 						ul.tabs
 							li
@@ -399,11 +443,4 @@ block content
 										.order
 											a(href="#") Đặt hàng trước
 											span để nhận ưu đãi 5%
-
-
-
-
-
-
-
 	include includes/footer.pug
