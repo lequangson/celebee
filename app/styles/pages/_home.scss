@@ -922,6 +922,18 @@
 					bottom: 15px;
 				}
 			}
+			.sold-out {
+				position: absolute;
+				bottom: 5px;
+				left: 10px;
+				right: 10px;
+				background-color: $color-primary;
+				color: $white;
+				text-align: center;
+				font-size: 32px;
+				text-transform: uppercase;
+				font-weight: 600;
+			}
 		}
 		&:hover {
 			border-color: $color-primary;
@@ -949,11 +961,12 @@
 						}
 					}
 				}
-				.sticky-heart {
+				.sticky-heart  {
 					position: absolute;
 					left: 0;
 					top: 50px;
 				}
+
 				.review-count {
 					position: absolute;
 					left: 0;
@@ -961,6 +974,7 @@
 					i {
 						color: $color-primary;
 					}
+
 				}
 			}
 			.right-footer-product {

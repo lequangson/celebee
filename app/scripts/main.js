@@ -62,7 +62,7 @@ $(document).ready(function() {
 
         $(this).countdown(dateTime, function(event) {
             $(this).html(
-                event.strftime('<ul class="list-time"><li class="cd-days"><p class="countdown-number">%D</p> </li> : <li class="cd-hours"><p class="countdown-number">%H</p></li> : <li class="cd-minutes"><p class="countdown-number">%M</p></li> : <li  class="cd-seconds"> <p class="countdown-number">%S</p></li></ul>')
+                event.strftime('<ul class="list-time"><li class="cd-hours"><p class="countdown-number">%H</p></li> : <li class="cd-minutes"><p class="countdown-number">%M</p></li> : <li  class="cd-seconds"> <p class="countdown-number">%S</p></li></ul>')
             );
         });
     });
@@ -78,26 +78,21 @@ $(document).ready(function() {
 	  });
 	    var $backToTop = $('.back-to-top');
 
-           
-            $backToTop.click(function(event) {
-            	console.log('sàdsdfsd');
-                event.preventDefault();
-
-                $('html,body').animate({
-                    scrollTop: '0px'
-                }, 800);
-            });
+		$backToTop.click(function(event) {
+			event.preventDefault();
+			$('html,body').animate({
+				scrollTop: '0px'
+			}, 800);
+		});
           
-         var $backToBottom = $('.back-to-bottom');
-        
-            $backToBottom.click(function(event) {
-            	console.log('sàdsdfsd');
-                event.preventDefault();
-
-                $('html,body').animate({
-                    scrollTop:$(document).height()
-                }, 800);
-            });
+        var $backToBottom = $('.back-to-bottom');
+		
+		$backToBottom.click(function(event) {
+			event.preventDefault();
+			$('html,body').animate({
+				scrollTop:$(document).height()
+			}, 800);
+		});
              
          $('ul.tabs').each(function(){
     // For each set of tabs, we want to keep track of
