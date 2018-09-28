@@ -283,6 +283,9 @@
 	margin-top: 10px;
 	.review-detail {
 		width: 65%;
+		@media(max-width: 991px) {
+			width: 100%;	
+		}
 		.title-review {
 			h2 {
 				font-size: 20px;
@@ -294,9 +297,20 @@
 		}
 		.thumbnail {
 			width: 40%;
+			@media(max-width: 767px) {
+				width: 100%;	
+				text-align: center;
+			}
+
 		}
 		.review-average {
 			width: 25%;
+			@media(max-width: 767px) {
+				width: 50%;	
+			}
+			@media(max-width: 480px) {
+				width: 100%;	
+			}
 			text-align: center;
 			margin-top: 30px;
 			.average {
@@ -318,6 +332,13 @@
 		}
 		.rating-block {
 			width: 35%;
+			@media(max-width: 767px) {
+				width: 50%;	
+			}
+			@media(max-width: 480px) {
+				width: 100%;
+				padding-left: 30px;	
+			}
 			margin-top: 30px;
 			h3 {
 				font-size: 16px;
@@ -356,6 +377,9 @@
 	}
 	.review-action {
 		width: 35%;
+		@media(max-width: 991px) {
+			width: 100%;	
+		}
 		.title-review {
 			h2 {
 				font-size: 20px;
@@ -378,7 +402,7 @@
 				textarea {
 					margin-top: 10px;
 					height: 155px;
-					width: 94%;
+					width: 91%;
 					padding: 10px;
 					color: #666666;
 				}

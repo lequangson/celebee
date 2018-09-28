@@ -346,7 +346,7 @@ block content
 									.review-detail
 										.title-review
 											h2 Review Detail
-										.content-review-detail.d-flex
+										.content-review-detail.d-flex.flex-wrap
 											.thumbnail
 												img(src="images/review-thumb.jpg")
 											.review-average
@@ -405,6 +405,83 @@ block content
 												input( id="star-1" type="radio" name="rating" value="star-1")
 												label(for="star-1" title="1 stars")
 													i.fa.fa-star.active( aria-hidden="true")
+											.sticky-heart +5
+												img(src="images/icon/icon-heart.png")
+										.rating-comment
+											form(action="" method="")
+												textarea Nhập bình luận
+												input(type="submit" value="Gửi bình luận")
+											a(href="#") View more comments
+							.item-review
+								.header-review
+									h2 
+										span 1.
+										| Kem dưỡng ẩm
+									.review-info.d-flex
+										.review-count
+											i.fa.fa-star
+											i.fa.fa-star
+											i.fa.fa-star
+											i.fa.fa-star
+											i.fa.fa-star-o
+										.rating-count
+											| 588 Ratings
+										.review-number
+											| 25 Views
+								
+								.block-review.d-flex.flex-wrap
+									.review-detail
+										.title-review
+											h2 Review Detail
+										.content-review-detail.d-flex.flex-wrap
+											.thumbnail
+												img(src="images/review-thumb.jpg")
+											.review-average
+												.average 4.2
+												.review-count
+													i.fa.fa-star
+													i.fa.fa-star
+													i.fa.fa-star
+													i.fa.fa-star
+													i.fa.fa-star-o
+											.rating-block
+												h3 Based on 588 Ratings
+												.progress-review.d-flex
+													.left 5 star
+													.middle
+														.progress-bar( role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="5" )
+													.right 355
+												.progress-review.d-flex
+													.left 4 star
+													.middle
+														.progress-bar( role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="5" )
+													.right 177
+												.progress-review.d-flex
+													.left 3 star
+													.middle
+														.progress-bar( role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="5" )
+													.right 39
+												.progress-review.d-flex
+													.left 2 star
+													.middle
+														.progress-bar( role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="5" )
+													.right 14
+												.progress-review.d-flex
+													.left 1 star
+													.middle
+														.progress-bar( role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="5" )
+													.right 3
+									.review-action
+										.title-review
+											h2 Your Review
+										.rating-action.d-flex
+											span.title Rating
+											.star-rating
+												each val in [5, 4, 3, 2, 1]
+													input( id=`star-${val}` type="radio" name="rating" value=`star-${val}`)
+													label(for=`star-${val}` title="5 stars")
+														i.fa.fa-star.active( aria-hidden="true")
+												
 											.sticky-heart +5
 												img(src="images/icon/icon-heart.png")
 										.rating-comment
