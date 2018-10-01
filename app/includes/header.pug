@@ -76,20 +76,13 @@ header
 	.mobile-header
 		#header-mobile
 
-			.top-header
+			.top-header.d-flex
 				
-				.top-bar
-					ul.top-bar-nav.d-flex.justify-content-center
-						li
-							a(href="#") Đăng kí
-						li
-						li
-							a(href="#") Đăng nhập
-						li.member-logged
-							a(href="#") Chào Trần Mạnh Hùng
-							.beecoin +5 Beecoin
-						li
-							a(href="#") Hướng dẫn mua hàng
+				.phone.item-middle-bar
+						.phone-icon
+							img(src="images/icon/icon-phone.png")
+						p.phone-number 024.255589
+						p.open-hour 8-21h, cả T7 &amp; CN
 			.main-nav-mobile
 				h3 Menu
 				ul.navbar-nav.d-flex
@@ -116,6 +109,8 @@ header
 						a Danh mục 1
 					li
 						a Danh mục 1
+
+
 					li
 						a Danh mục 1
 		.content-mobile-menu.d-flex
@@ -125,18 +120,20 @@ header
 					span
 					span
 			.logo-mobile.item-header-mobile
-				img(src="images/logo.png")
-			.mobile-cart.item-header-mobile
-				a(href="#")
-					img(src="images/icon/icon-cart.png")
+				img(src="images/mobile-logo.png")
+			
 			.mobile-serch.item-header-mobile
 				.toggle-search
-					img(src="images/icon/icon-search.png")
+					img(src="images/icon-mobile-search.png")
 					.search-box
 						.form-group
 							input(type="text", placeholder="Tìm kiếm")
 							button(type="submit") Tìm kiếm
-				
+			.mobile-cart.item-header-mobile
+				a(href="#")
+					img(src="images/icon-mobile-cart.png")
+		.overlay-menu
+		
 
 			
 		  	

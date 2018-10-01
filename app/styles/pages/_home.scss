@@ -249,8 +249,18 @@
 	.live-area {
 		position: relative;
 		width: 55%;
+		@media(max-width: 991px) {
+			width: 100%;
+			margin-right: 0;
+			display: block!important;
+
+		}
 		display: inline-block;
 		margin-right: 30px;
+		> img {
+			width: 100%;
+			height: auto;
+		}
 		.overlay-play {
 			@include transition(all 0.3s);
 			position: absolute;
@@ -264,6 +274,9 @@
 				left: 50%;
 				top: 50%;
 				transform: translate(-50% , -50%);
+				@media(max-width: 991px) {
+					max-width: 60px;
+				}
 			}
 			.title-live {
 				position: absolute;
@@ -277,6 +290,9 @@
 				text-transform: uppercase;
 				color: $white;
 				font-size: 18px;
+				@media(max-width: 991px) {
+					font-size: 14px;
+				}
 				span {
 					font-size: 22px;
 					font-weight: 600;
@@ -287,6 +303,10 @@
 	}
 	.product-area {
 		width: calc(45% - 30px);
+		@media(max-width: 991px) {
+			width: 100%;
+			padding-top: 30px;
+		}
 		display: inline-block;
 		.left-product-area {
 			margin-right: 10px;
@@ -527,6 +547,12 @@
 		position: absolute;
 		right: 0;
 		top: 0;
+		@media(max-width: 991px) {
+			position: static;
+		}
+		ul {
+			padding-left: 0;
+		}
 	}
 	
 }
@@ -591,14 +617,26 @@
 		width: 40%;
 		
 	}
+	@media(max-width: 480px) {
+		width: 85%;
+		
+	}
 	.left-footer-product{
 		width: 40%;
+		@media(max-width: 767px) {
+			width: 100%;
+			
+		}
 	}
 	.right-footer-product {
 		width: 60%;
 	 	.sale-off {
 	 		margin-left: 5px;
 	 	}
+	 	@media(max-width: 767px) {
+			width: 100%;
+			
+		}
 	
 	}
 }
@@ -609,18 +647,33 @@
 		margin-top: 30px;
 	}
 	@media(max-width: 767px) {
-		width: 44%;
+		width: 40%;
+		
+	}
+	@media(max-width: 767px) {
+		width: 40%;
+		
+	}
+	@media(max-width: 480px) {
+		width: 85%;
 		
 	}
 	.left-footer-product{
 		width: 50%;
+		@media(max-width: 767px) {
+			width: 100%;
+			
+		}
 	}
 	.right-footer-product {
 		width: 50%;
 	 	.sale-off {
 	 		margin-left: 25px;
 	 	}
-	
+	@media(max-width: 767px) {
+			width: 100%;
+			
+		}
 	}
 	
 }
@@ -637,8 +690,10 @@
 		
 		margin-left: 15px;
 		margin-right: 15px;
-		
-		
+		@media(max-width: 767px) {
+			margin-left: 10px;
+			margin-right: 10px;
+		}
 		.thumbnail-trend {
 			position: relative;
 			> img {
@@ -648,18 +703,19 @@
 				position: absolute;
 				left: 0;
 				opacity: 0;
-				top: 0;
+				
 				width: 100%;
 				bottom: 0;
+				height: 165px;
 				background-color: rgba(#000,0.45);
 				@include transition(all 0.3s);
 				
 				> h3 {
 					position: absolute;
-					left: 0;
+					left: 15px;
 					width: 100%;
-					text-align: center;
-					top: calc(50% - 90px);
+					
+					bottom: 95px;
 					color: $white;
 					font-weight: 500;
 					text-transform: uppercase;
@@ -668,6 +724,12 @@
 					position: absolute;
 					bottom: 95px;
 					right: 15px;
+					img {
+						width: 40px;
+					}
+					.wishlist-a {
+						display: none;
+					}
 					i {
 						font-size: 50px;
 						color: $white;
@@ -685,6 +747,14 @@
 							&.fa-heart {
 								display: inline-block;
 							}
+						}
+					}
+					&:hover {
+						.wishlist {
+							display: none;
+						}
+						.wishlist-a {
+							display: block;
 						}
 					}
 				}
@@ -801,7 +871,7 @@
 		}
 	}
 }
-.thumbnail-trend, .thumbnail-product {
+.thumbnail-product {
 	position: relative;
 	> img {
 		width: 100%;
@@ -830,23 +900,20 @@
 			position: absolute;
 			bottom: 95px;
 			right: 15px;
-			i {
-				font-size: 50px;
-				color: $white;
-				font-weight: 300;
-				&.fa-heart {
+			img {
+				width: 40px;
+			}
+			.wishlist-a {
+				display: none;
+			}
+			
+		
+			&:hover {
+				.wishlist {
 					display: none;
 				}
-			}
-			&.active {
-				i {
-					color: $color-primary;
-					&.fa-heart-o {
-						display: none;
-					}
-					&.fa-heart {
-						display: inline-block;
-					}
+				.wishlist-a {
+					display: block;
 				}
 			}
 		}
@@ -905,12 +972,16 @@
 	margin-right: -15px;
 	@media(max-width: 991px) {
 		flex-wrap: wrap;
-		justify-content: start!important;
+		
 	}
 	.item-product-sale {
 		
 		margin-left: 15px;
 		margin-right: 15px;
+		@media(max-width: 767px) {
+			margin-left: 10px;
+			margin-right: 10px;
+		}
 		border: 1px solid $color-border;
 		.thumbnail-product {
 			.overlay-content {
@@ -952,6 +1023,9 @@
 					margin-bottom: 30px;
 					margin-top: 0;
 					line-height: 14px;
+					@media(max-width: 767px) {
+						margin-bottom: 10px;
+					}
 					a {
 						font-size: 14px;
 						color: #030303;
@@ -965,6 +1039,9 @@
 					position: absolute;
 					left: 0;
 					top: 50px;
+					@media(max-width: 767px) {
+						position: static;
+					}
 				}
 
 				.review-count {
@@ -1011,7 +1088,9 @@
 					background-color: $color-primary;
 					color: $white;
 					text-align: center;
-					
+					@media(max-width: 767px) {
+						margin-left: 3px;
+					}
 					p {
 						line-height: 1;
 					    margin-top: 10px;

@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$(".menu-link").click(function(){
 	      $("#header-mobile").toggleClass("active");
 	      $(".toggle-mobile-menu").toggleClass("active");
-	      $('body').addClass('overlay');
+	      $('.overlay-menu').toggleClass('overlay');
 	});
 	  $(".toggle-search").click(function() {
        $(".search-box").toggle();
@@ -66,7 +66,21 @@ $(document).ready(function() {
             );
         });
     });
-
+    $('.thumbnail-trend').each(function(index, value){
+    	var $imageHover = $(this).find('.image-hover').attr('data-hover');
+    	var $imageOrigin = $(this).find('.image-hover').attr('data-origin');
+    	 $(this).find('.image-hover').attr('src',$imageOrigin);
+    	$(this).mouseenter(function(){
+    		
+			  $(this).find('.image-hover').attr('src',$imageHover);
+			
+	 	});
+	 	$(this).mouseleave(function(){
+    		
+			  $(this).find('.image-hover').attr('src',$imageOrigin);
+			
+	 	});
+    });
 	$('.isotope-gallery').isotope({
 	  	layoutMode: 'packery',
 	  	itemSelector: '.item-gallery',
