@@ -81,6 +81,12 @@ $(document).ready(function() {
 			
 	 	});
     });
+    $( ".toggle-menu" ).each(function(index, value) {
+	  $(this).click(function() {
+		  $(this).find( ".sub-menu" ).slideToggle( "slow" );
+		  $(this).toggleClass('active');
+		});
+	});
 	$('.isotope-gallery').isotope({
 	  	layoutMode: 'packery',
 	  	itemSelector: '.item-gallery',

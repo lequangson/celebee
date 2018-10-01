@@ -275,7 +275,7 @@
 						padding-top: 0;
 						padding-bottom: 0;
 						color: $white;
-						border-right: 1px solid #eaaa00;
+						border-right: 2px solid #eaaa00;
 						font-size: 18px;
 						line-height: 1;
 					}
@@ -325,111 +325,92 @@
 	    top: 0;
 	    bottom: 0;
 	    z-index: 9999;
-	    width: 275px;
-	    left: -275px;
+	    width: 300px;
+	    left: -300px;
 	    height: 100%;
 	    padding-top: 20px;
-	    background-color: $color-primary;
+	    background-color: $white;
 	    @include translate(0, 0);
 	 	@include transition(all 0.3s);
 	 	&.active {
-	 		@include translate(275px, 0);
+	 		@include translate(300px, 0);
 	 		
 	 	}
 	 	.top-header {
-	 		.top-bar {
-				ul {
-					list-style: none;
-					padding-left: 10px;
-					flex-wrap: wrap;
-					li {
-						position: relative;
-						margin-right: 2px;
-						&:last-child {
-							margin-right: 0;
-							a {
-								border-right: none;
-							}
-						}
-						a {
-							padding-right: 5px;
-							color: $white;
-							border-right: 1px solid $color-link;
-							font-size: 12px;
-							&:hover {
-								color: #3c3c3c;
-								text-decoration: none;
-
-							}
-						}
-						&.member-logged {
-							.beecoin {
-								position: absolute;
-								left: 50%;
-								transform: translateX(-50%);
-								bottom: -30px;
-								background-color: $white;
-								color: $color-primary;
-								opacity: 0;
-								text-align: center;
-								padding: 2px 5px;
-								width: 90px;
-								z-index: 10;
-								@include rounded(4px);
-								@include transition(all 0.3s);
-								&:after {
-									position: absolute;
-									content: "";
-									width: 0; 
-									top: -5px;
-									left: 50%;
-								  	height: 0; 
-								  	border-left: 5px solid transparent;
-								 	border-right: 5px solid transparent;
-								  
-								  	border-bottom: 5px solid $color-primary;	
-								}
-							}
-							&:hover {
-								.beecoin {
-									opacity: 1;
-								}
-							}
-						}
-					}
-				}
-		 	}
+	 		.phone {
+	 			border: 1px solid $color-primary;
+			    height: 32px;
+			   	padding-top: 1px;
+			   	padding-left: 1px;
+			    border-radius: 30px;
+			    margin-left: 10px;
+			    width: 38%;
+			    .phone-icon {
+			    	display: inline-block;
+			    	vertical-align: middle;
+			    	img {
+			    		max-width: 30px;
+			    	}
+			    }
+			    .phone-number {
+			    	display: inline-block;
+			    	color: $color-primary;
+			    	font-weight: bold;
+			    	vertical-align: middle;
+			    	font-size: 12px;
+			    	margin-bottom: 0;
+			    }
+	 		}
+	 		.user-link {
+	 			width: 62%;
+	 			padding-left: 15px;
+	 			img {
+	 				max-width: 30px;
+	 				display: inline-block;
+	 			}
+	 			.username {
+	 				display: inline-block;
+	 				vertical-align: middle;
+	 				font-size: 12px;
+	 				span {
+	 					color: $color-primary;
+	 				}
+	 			}
+	 		}
 		}
 		.main-nav-mobile {
+			margin-top: 30px;
 			
-			padding-left: 10px;
-			padding-right: 10px;
 			h3 {
 				color: $color-primary;
 				text-align: center;
 				background-color: $white;
 			}
-			ul {
-				li {
-					text-align: center;
-					a {
-						color: $white;
+			.navbar-nav {
+				> li {
+					position: relative;
+					> a {
+						padding-left: 10px;
+						padding-right: 10px;
+						color: $color-link;
+						font-weight: 600;
 						border-bottom: 1px solid #ccc;
+						font-size: 12px;
 						&:hover {
-							color: #3c3c3c;
+							color: $color-primary;
 							text-decoration: none;
 
 						}
 					}
 					&:last-child {
-						margin-top: 10px;
+						
 						a {
 							border-bottom: none;
 
 							border-radius: 8px;
-							background-color: $white;
+							
 							color: $color-primary;
-							padding: 10px;
+							
 							display: block;
 							position: relative;
 							&:before {
@@ -438,6 +419,42 @@
   								left: 3px;
   								top: 50%;
 							}
+						}
+					}
+					.sub-menu {
+						background-color: #e7e7e7;
+						list-style: none;
+						padding-left: 0;
+						display: none;
+						li {
+							a {
+								color: $color-link;
+								padding-left: 20px;
+								font-size: 12px;
+								border-bottom: 1px solid #ccc;
+								display: block;
+								padding-top: 5px;
+								padding-bottom: 5px;
+								&:hover {
+									color: $color-primary;
+								}
+							}
+
+						}
+					}
+					&.has-submenu {
+						&:after {
+							position: absolute;
+							right: 10px;
+							top: 5px;
+							font-family: FontAwesome;
+    						content: "\f107";
+						}
+						&.active {
+							&:after {
+								content: "\f106";
+							}
+							
 						}
 					}
 				}
@@ -515,7 +532,7 @@
 				}
 			}
 			&.active {
-				@include translate(275px, 0);
+				@include translate(300px, 0);
 		 		.menu-link {
 		 			span {
 		 				&:nth-child(1) {
@@ -616,7 +633,7 @@
 					display: none;
 				}
 				position: absolute;
-				top: 0;
+				top: 30px;
 				width: 90px;
 				right: -100px;
 				z-index: 9999;

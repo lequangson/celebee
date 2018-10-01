@@ -696,8 +696,10 @@
 		}
 		.thumbnail-trend {
 			position: relative;
-			> img {
+			.image-hover {
 				width: 100%;
+				@include transition(all 0.3s);
+				max-height: 400px
 			}
 			.overlay-content {
 				position: absolute;
@@ -759,10 +761,10 @@
 					}
 				}
 				.product-info {
-					border-bottom: 1px solid $color-border;
+					
 					position: absolute;
 					width: 100%;
-					bottom: -1px;
+					bottom: 0;
 					height: 90px;
 
 					background-color: $white;
@@ -809,13 +811,11 @@
 		}
 		&:hover {
 			border-color: $color-primary;
-			border-bottom: 1px solid transparent;
+			
 			.thumbnail-trend {
 				.overlay-content {
 					opacity: 1;
-					.product-info { 
-						border-color: $color-primary;
-					}
+					
 				}
 			}
 		}
@@ -918,7 +918,7 @@
 			}
 		}
 		.product-info {
-			border-bottom: 1px solid $color-border;
+			
 			position: absolute;
 			width: 100%;
 			bottom: -1px;
