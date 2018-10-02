@@ -627,6 +627,11 @@
 		.container {
 			padding-left: 0;
 			padding-right: 0;
+			@media(max-width: 575px) {
+				padding-left: 15px;
+				padding-right: 15px;
+				max-width: 92%;
+			}
 			position: relative;
 			.sticky-sidebar {
 				@media(max-width: 991px) {
