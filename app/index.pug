@@ -7,14 +7,23 @@ block content
 			.container
 				.sticky-sidebar
 					.cart-history
-						h3 Lịch sử
+						h3 Đã xem
 						.list-product-history
 							.item
-								img(src="images/hist-item-1.jpg")
+								a(href="#")
+									img(src="images/hist-item-1.jpg")
+								a.delete(href="#")
+									i.fa.fa-close
 							.item
-								img(src="images/hist-item-2.jpg")
+								a(href="#")
+									img(src="images/hist-item-2.jpg")
+								a.delete(href="#")
+									i.fa.fa-close
 							.item
-								img(src="images/hist-item-4.jpg")
+								a(href="#")
+									img(src="images/hist-item-4.jpg")
+								a.delete(href="#")
+									i.fa.fa-close
 						p.cart-number 
 							a(href="#") Giỏ hàng
 							span 1
@@ -226,12 +235,15 @@ block content
 									p.name Trương Bảo Anh
 									p.follow 2000 follows
 							.thumbnail-trend
-								img(src="images/user-1.png")
+								a(href="#")
+									img.image-hover(data-origin="images/user-1.png" data-hover="images/user-2.jpg")
+
 								.overlay-content
 									h3 99 Loves
 									.love
 										a(href="#")
-											i.fa.fa-heart-o
+											img.wishlist(src="images/icon-wishlist.png")
+											img.wishlist-a(src="images/icon-wishlist-a.png")
 									.product-info.d-flex
 										.left-info
 											h3 
@@ -249,13 +261,14 @@ block content
 									p.name Trương Bảo Anh
 									p.follow 2000 follows
 							.thumbnail-trend
-								img(src="images/user-1.png")
+								a(href="#")
+									img.image-hover(data-origin="images/user-1.png" data-hover="images/user-2.jpg")
 								.overlay-content
 									h3 99 Loves
-									.love.active
+									.love
 										a(href="#")
-											i.fa.fa-heart-o
-											i.fa.fa-heart
+											img.wishlist(src="images/icon-wishlist.png")
+											img.wishlist-a(src="images/icon-wishlist-a.png")
 									.product-info.d-flex
 										.left-info
 											h3 
@@ -273,12 +286,14 @@ block content
 									p.name Trương Bảo Anh
 									p.follow 2000 follows
 							.thumbnail-trend
-								img(src="images/user-1.png")
+								a(href="#")
+									img.image-hover(data-origin="images/user-1.png" data-hover="images/user-2.jpg")
 								.overlay-content
 									h3 99 Loves
 									.love
 										a(href="#")
-											i.fa.fa-heart-o
+											img.wishlist(src="images/icon-wishlist.png")
+											img.wishlist-a(src="images/icon-wishlist-a.png")
 									.product-info.d-flex
 										.left-info
 											h3 
@@ -296,12 +311,14 @@ block content
 									p.name Trương Bảo Anh
 									p.follow 2000 follows
 							.thumbnail-trend
-								img(src="images/user-1.png")
+								a(href="#")
+									img.image-hover(data-origin="images/user-1.png" data-hover="images/user-2.jpg")
 								.overlay-content
 									h3 99 Loves
 									.love
 										a(href="#")
-											i.fa.fa-heart-o
+											img.wishlist(src="images/icon-wishlist.png")
+											img.wishlist-a(src="images/icon-wishlist-a.png")
 									.product-info.d-flex
 										.left-info
 											h3 
@@ -333,9 +350,9 @@ block content
 									h3 99 Loves
 									.love
 										a(href="#")
-											i.fa.fa-heart-o
-											i.fa.fa-heart
-							.footer-product.d-flex
+											img.wishlist(src="images/icon-wishlist.png")
+											img.wishlist-a(src="images/icon-wishlist-a.png")
+							.footer-product.d-flex.flex-wrap
 								.left-footer-product
 									h3
 										a(href="#") Nước Hoa Hồng
@@ -363,9 +380,9 @@ block content
 									h3 99 Loves
 									.love
 										a(href="#")
-											i.fa.fa-heart-o
-											i.fa.fa-heart
-							.footer-product.d-flex
+											img.wishlist(src="images/icon-wishlist.png")
+											img.wishlist-a(src="images/icon-wishlist-a.png")
+							.footer-product.d-flex.flex-wrap
 								.left-footer-product
 									h3
 										a(href="#") Nước Hoa Hồng
@@ -391,11 +408,11 @@ block content
 								img(src="images/product-sale.jpg")
 								.overlay-content
 									h3 99 Loves
-									.love.active
+									.love
 										a(href="#")
-											i.fa.fa-heart-o
-											i.fa.fa-heart
-							.footer-product.d-flex
+											img.wishlist(src="images/icon-wishlist.png")
+											img.wishlist-a(src="images/icon-wishlist-a.png")
+							.footer-product.d-flex.flex-wrap
 								.left-footer-product
 									h3
 										a(href="#") Nước Hoa Hồng
@@ -432,9 +449,9 @@ block content
 									h3 99 Loves
 									.love
 										a(href="#")
-											i.fa.fa-heart-o
-											i.fa.fa-heart
-							.footer-product.d-flex
+											img.wishlist(src="images/icon-wishlist.png")
+											img.wishlist-a(src="images/icon-wishlist-a.png")
+							.footer-product.d-flex.flex-wrap
 								.left-footer-product
 									h3
 										a(href="#") Nước Hoa Hồng
@@ -462,9 +479,9 @@ block content
 									h3 99 Loves
 									.love
 										a(href="#")
-											i.fa.fa-heart-o
-											i.fa.fa-heart
-							.footer-product.d-flex
+											img.wishlist(src="images/icon-wishlist.png")
+											img.wishlist-a(src="images/icon-wishlist-a.png")
+							.footer-product.d-flex.flex-wrap
 								.left-footer-product
 									h3
 										a(href="#") Nước Hoa Hồng
@@ -492,9 +509,9 @@ block content
 									h3 99 Loves
 									.love.active
 										a(href="#")
-											i.fa.fa-heart-o
-											i.fa.fa-heart
-							.footer-product.d-flex
+											img.wishlist(src="images/icon-wishlist.png")
+											img.wishlist-a(src="images/icon-wishlist-a.png")
+							.footer-product.d-flex.flex-wrap
 								.left-footer-product
 									h3
 										a(href="#") Nước Hoa Hồng
@@ -543,9 +560,9 @@ block content
 									h3 99 Loves
 									.love
 										a(href="#")
-											i.fa.fa-heart-o
-											i.fa.fa-heart
-							.footer-product.d-flex
+											img.wishlist(src="images/icon-wishlist.png")
+											img.wishlist-a(src="images/icon-wishlist-a.png")
+							.footer-product.d-flex.flex-wrap
 								.left-footer-product
 									h3
 										a(href="#") Nước Hoa Hồng
@@ -574,9 +591,9 @@ block content
 									h3 99 Loves
 									.love
 										a(href="#")
-											i.fa.fa-heart-o
-											i.fa.fa-heart
-							.footer-product.d-flex
+											img.wishlist(src="images/icon-wishlist.png")
+											img.wishlist-a(src="images/icon-wishlist-a.png")
+							.footer-product.d-flex.flex-wrap
 								.left-footer-product
 									h3
 										a(href="#") Nước Hoa Hồng
@@ -604,9 +621,9 @@ block content
 									h3 99 Loves
 									.love.active
 										a(href="#")
-											i.fa.fa-heart-o
-											i.fa.fa-heart
-							.footer-product.d-flex
+											img.wishlist(src="images/icon-wishlist.png")
+											img.wishlist-a(src="images/icon-wishlist-a.png")
+							.footer-product.d-flex.flex-wrap
 								.left-footer-product
 									h3
 										a(href="#") Nước Hoa Hồng
@@ -634,9 +651,9 @@ block content
 									h3 99 Loves
 									.love.active
 										a(href="#")
-											i.fa.fa-heart-o
-											i.fa.fa-heart
-							.footer-product.d-flex
+											img.wishlist(src="images/icon-wishlist.png")
+											img.wishlist-a(src="images/icon-wishlist-a.png")
+							.footer-product.d-flex.flex-wrap
 								.left-footer-product
 									h3
 										a(href="#") Nước Hoa Hồng

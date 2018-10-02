@@ -75,28 +75,38 @@ header
 									a.nav-link(href="#") Live Stream
 	.mobile-header
 		#header-mobile
+			.top-header.d-flex
+				.phone
+					.phone-icon
+						img(src="images/icon/icon-phone.png")
+					p.phone-number 024.255589
+						
+				.user-link.logged
+					img(src="images/avatar-1.png")
+					.username Chào 
+						span Trần Mạnh Hùng
 
-			.top-header
-				
-				.top-bar
-					ul.top-bar-nav.d-flex.justify-content-center
-						li
-							a(href="#") Đăng kí
-						li
-						li
-							a(href="#") Đăng nhập
-						li.member-logged
-							a(href="#") Chào Trần Mạnh Hùng
-							.beecoin +5 Beecoin
-						li
-							a(href="#") Hướng dẫn mua hàng
 			.main-nav-mobile
-				h3 Menu
+				
 				ul.navbar-nav.d-flex
-					li.nav-item
-						a.nav-link(href="#") Hot Celeb
-					li.nav-item
-						a.nav-link(href="#") Hot Trends
+					li.nav-item.toggle-menu.has-submenu
+						a.nav-link(href="#") Thời trang
+						ul.sub-menu
+							li 
+								a(href="#") Men
+							li 
+								a(href="#") Girl
+							li 
+								a(href="#") Women
+					li.nav-item.toggle-menu.has-submenu
+						a.nav-link(href="#") Mỹ Phẩm
+						ul.sub-menu
+							li 
+								a(href="#") Kem dưỡng da
+							li 
+								a(href="#") Girl
+							li 
+								a(href="#") Women
 					li.nav-item
 						a.nav-link(href="#") Crazy Sales
 					li.nav-item
@@ -105,19 +115,7 @@ header
 						a.nav-link(href="#") Hot Celeb
 					li.nav-item.live-stream
 						a.nav-link(href="#") Live Stream
-			.category-mobile
-				h3 Danh Mục
-				ul
-					li
-						a Danh mục 1
-					li
-						a Danh mục 1
-					li
-						a Danh mục 1
-					li
-						a Danh mục 1
-					li
-						a Danh mục 1
+			
 		.content-mobile-menu.d-flex
 			.toggle-mobile-menu.item-header-mobile
 				.menu-link 
@@ -125,18 +123,21 @@ header
 					span
 					span
 			.logo-mobile.item-header-mobile
-				img(src="images/logo.png")
-			.mobile-cart.item-header-mobile
 				a(href="#")
-					img(src="images/icon/icon-cart.png")
+					img(src="images/mobile-logo.png")
+			
 			.mobile-serch.item-header-mobile
 				.toggle-search
-					img(src="images/icon/icon-search.png")
+					img(src="images/icon-mobile-search.png")
 					.search-box
 						.form-group
 							input(type="text", placeholder="Tìm kiếm")
 							button(type="submit") Tìm kiếm
-				
+			.mobile-cart.item-header-mobile
+				a(href="#")
+					img(src="images/icon-mobile-cart.png")
+		.overlay-menu
+		
 
 			
 		  	

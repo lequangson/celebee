@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$(".menu-link").click(function(){
 	      $("#header-mobile").toggleClass("active");
 	      $(".toggle-mobile-menu").toggleClass("active");
-	      $('body').addClass('overlay');
+	      $('.overlay-menu').toggleClass('overlay');
 	});
 	  $(".toggle-search").click(function() {
        $(".search-box").toggle();
@@ -62,11 +62,31 @@ $(document).ready(function() {
 
         $(this).countdown(dateTime, function(event) {
             $(this).html(
-                event.strftime('<ul class="list-time"><li class="cd-days"><p class="countdown-number">%D</p> </li> : <li class="cd-hours"><p class="countdown-number">%H</p></li> : <li class="cd-minutes"><p class="countdown-number">%M</p></li> : <li  class="cd-seconds"> <p class="countdown-number">%S</p></li></ul>')
+                event.strftime('<ul class="list-time"><li class="cd-hours"><p class="countdown-number">%H</p></li> : <li class="cd-minutes"><p class="countdown-number">%M</p></li> : <li  class="cd-seconds"> <p class="countdown-number">%S</p></li></ul>')
             );
         });
     });
-
+    $('.thumbnail-trend').each(function(index, value){
+    	var $imageHover = $(this).find('.image-hover').attr('data-hover');
+    	var $imageOrigin = $(this).find('.image-hover').attr('data-origin');
+    	 $(this).find('.image-hover').attr('src',$imageOrigin);
+    	$(this).mouseenter(function(){
+    		
+			  $(this).find('.image-hover').attr('src',$imageHover);
+			
+	 	});
+	 	$(this).mouseleave(function(){
+    		
+			  $(this).find('.image-hover').attr('src',$imageOrigin);
+			
+	 	});
+    });
+    $( ".toggle-menu" ).each(function(index, value) {
+	  $(this).click(function() {
+		  $(this).find( ".sub-menu" ).slideToggle( "slow" );
+		  $(this).toggleClass('active');
+		});
+	});
 	$('.isotope-gallery').isotope({
 	  	layoutMode: 'packery',
 	  	itemSelector: '.item-gallery',
@@ -78,26 +98,21 @@ $(document).ready(function() {
 	  });
 	    var $backToTop = $('.back-to-top');
 
-           
-            $backToTop.click(function(event) {
-            	console.log('sàdsdfsd');
-                event.preventDefault();
-
-                $('html,body').animate({
-                    scrollTop: '0px'
-                }, 800);
-            });
+		$backToTop.click(function(event) {
+			event.preventDefault();
+			$('html,body').animate({
+				scrollTop: '0px'
+			}, 800);
+		});
           
-         var $backToBottom = $('.back-to-bottom');
-        
-            $backToBottom.click(function(event) {
-            	console.log('sàdsdfsd');
-                event.preventDefault();
-
-                $('html,body').animate({
-                    scrollTop:$(document).height()
-                }, 800);
-            });
+        var $backToBottom = $('.back-to-bottom');
+		
+		$backToBottom.click(function(event) {
+			event.preventDefault();
+			$('html,body').animate({
+				scrollTop:$(document).height()
+			}, 800);
+		});
              
          $('ul.tabs').each(function(){
     // For each set of tabs, we want to keep track of
