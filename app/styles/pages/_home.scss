@@ -150,12 +150,19 @@
 				color: $white;
 				background: $color-primary;
 				padding: 3px 5px;
+				padding-left: 15px;
 				@include rounded(4px);
 				&:before {
-					content: "• ";
+					position: absolute;
+					width: 6px;
+					height: 6px;
+					border-radius: 50%;
+					background-color: $white;
+					content: "";
 					color: $white;
-					left: 3px;
+					left: 6px;
 					top: 50%;
+					transform: translateY(-50%);
 				}
 			}
 		}
@@ -590,12 +597,19 @@
 			position: relative;
 			margin-right: 5px;
 			font-weight: bold;
+			padding-left: 15px;
 			&:before {
-				content: "• ";
+				position: absolute;
+				
+				content: '';
+				width: 5px;
+				height: 5px;
+				border-radius: 50%;
+				background: $color-primary;
 			    color:$color-primary;
-			    left: 3px;
+			    left: 4px;
 			    top: 50%;
-			
+				transform: translateY(-50%);
 			}
 		}
 		span {
@@ -721,7 +735,7 @@
 				}
 				.love {
 					position: absolute;
-					bottom: 95px;
+					bottom: 103px;
 					right: 15px;
 					img {
 						width: 40px;

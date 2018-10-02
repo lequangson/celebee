@@ -699,6 +699,7 @@
 					i {
 						font-size: 26px;
 						@include transition(all 0.25s); 
+						color: $color-link;
 					}
 					&:hover {
 						i {

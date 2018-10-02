@@ -45,24 +45,7 @@ block content
 									span Instagram
 		.main
 			.container
-				.sticky-sidebar
-					.cart-history
-						h3 Đã xem
-						.list-product-history
-							.item
-								img(src="images/hist-item-1.jpg")
-							.item
-								img(src="images/hist-item-2.jpg")
-							.item
-								img(src="images/hist-item-4.jpg")
-						p.cart-number 
-							a(href="#") Giỏ hàng
-							span 1
-					hr
-					.back-to-button.back-to-top
-						i.fa.fa-angle-up
-					.back-to-button.back-to-bottom
-						i.fa.fa-angle-down
+				include includes/cart-history.pug
 			
 				.live-colection
 					.livestream-block.d-flex.flex-wrap
