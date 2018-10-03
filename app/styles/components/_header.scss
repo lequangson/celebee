@@ -206,6 +206,7 @@
 		text-align: center;
 		line-height: 50px;
 		display: inline-block;
+		cursor: pointer;
 
 		@include rounded(20px);
 		a.collapse-button {
@@ -242,6 +243,8 @@
 			}
 		}
 		#category-collapse {
+			opacity: 0;
+			@include transition(all 0.3s);
 			.card.card-body {
 				z-index: 999;
 				background-color: rgba($white,0.8);
@@ -261,6 +264,11 @@
 						}
 					}
 				}
+			}
+		}
+		&:hover {
+			#category-collapse { 
+				opacity: 1;
 			}
 		}
 	}
@@ -660,8 +668,8 @@
 							position: relative;
 							.delete {
 								position: absolute;
-								top: 0;
-								right: 0;
+								top: -6px;
+								right: 15px;
 								opacity: 0;
 								color: $color-primary;
 							}

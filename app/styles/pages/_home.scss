@@ -474,6 +474,11 @@
 					&:focus {
 						outline: none;
 					}
+					&:hover {
+						&:after {
+							color: $color-primary;
+						}
+					}
 				}
 				.slick-prev {
 					position: absolute;
@@ -500,6 +505,11 @@
 					}
 					&:focus {
 						outline: none;
+					}
+					&:hover {
+						&:after {
+							color: $color-primary;
+						}
 					}
 				}
 			}
@@ -813,7 +823,7 @@
 							padding: 2px 8px;
 							border-radius: 4px;
 							img {
-								margin-left: 5px;
+								margin-left: 1px;
 							}
 						}
 					}
@@ -975,7 +985,7 @@
 	padding: 2px 8px;
 	border-radius: 4px;
 	img {
-		margin-left: 5px;
+		margin-left: 1px;
 	}
 }
 .content-product-sale {

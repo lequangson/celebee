@@ -81,11 +81,18 @@
 					line-height: 60px;
 					color: $color-primary;
 					font-size: 20px;
-					
+					cursor: pointer;
 					text-transform: uppercase;
 					span {
 						font-weight: bold;
 						margin-left: 5px;
+					}
+					&.social-folow-button {
+						 transition: all 0.3s;
+						&:hover {
+							background: $color-primary;
+							color: $white;
+						}
 					}
 				}
 
@@ -100,6 +107,23 @@
 			}
 		}
 	}
+}
+
+.folow-button {
+	position: relative;
+	
+	&.active {
+		&:before {
+			position: absolute;
+			left: 25px;
+			top: 50%;
+			transform: translateY(-50%);
+			
+			font-family: FontAwesome;
+			content: "\f00c";
+		}
+	}
+	
 }
 .tab-products {
 	margin-top: 30px;
