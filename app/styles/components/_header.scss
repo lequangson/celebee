@@ -302,7 +302,8 @@
 									background-color: #e8e8e8;
 									list-style: none;
 									padding:10px 20px;
-									
+									opacity: 0;
+									@include transition(all 0.3s);
 									li {
 										background-color: #e8e8e8;
 										border-left: none;
@@ -318,6 +319,11 @@
 												color: #000;
 											}
 										}
+									}
+								}
+								&:hover {
+									.sub-menu-sub {
+										opacity: 1;
 									}
 								}
 							}
