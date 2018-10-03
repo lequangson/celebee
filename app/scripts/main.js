@@ -75,32 +75,35 @@ $(document).ready(function() {
         });
     });
     $('.thumbnail-trend').each(function(index, value){
-    	var $imageHover = $(this).find('.image-hover').attr('data-hover');
-    	var $imageOrigin = $(this).find('.image-hover').attr('data-origin');
-    	 $(this).find('.image-hover').attr('src',$imageOrigin);
+    	var imageHover = $(this).find('.image-hover').attr('data-hover');
+    	var imageOrigin = $(this).find('.image-hover').attr('data-origin');
+    	var urlOrigin = 'url(' +imageOrigin +')';
+    	var urlHover =  'url(' +imageHover +')';
+    	
+    	 $(this).find('.image-hover').css('background',urlOrigin);
     	$(this).mouseenter(function(){
     		
-			  $(this).find('.image-hover').attr('src',$imageHover);
+			  $(this).find('.image-hover').css('background',urlHover);
 			
 	 	});
 	 	$(this).mouseleave(function(){
     		
-			  $(this).find('.image-hover').attr('src',$imageOrigin);
+			  $(this).find('.image-hover').css('background',urlOrigin);
 			
 	 	});
     });
      $('.thumbnail-product').each(function(index, value){
-    	var $imageHover = $(this).find('.image-hover').attr('data-hover');
-    	var $imageOrigin = $(this).find('.image-hover').attr('data-origin');
-    	 $(this).find('.image-hover').attr('src',$imageOrigin);
+    	var imageHover = $(this).find('.image-hover').attr('data-hover');
+    	var imageOrigin = $(this).find('.image-hover').attr('data-origin');
+    	 $(this).find('.image-hover').attr('src',imageOrigin);
     	$(this).mouseenter(function(){
     		
-			  $(this).find('.image-hover').attr('src',$imageHover);
+			  $(this).find('.image-hover').attr('src',imageHover);
 			
 	 	});
 	 	$(this).mouseleave(function(){
     		
-			  $(this).find('.image-hover').attr('src',$imageOrigin);
+			  $(this).find('.image-hover').attr('src',imageOrigin);
 			
 	 	});
     });
