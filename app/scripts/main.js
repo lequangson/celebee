@@ -149,5 +149,8 @@ $(document).ready(function() {
 	        e.preventDefault();
 	    });
 	});
-
+     $('.folow-button').click(function(){
+     	$(this).addClass('active');
+     	return false;
+     });
 });

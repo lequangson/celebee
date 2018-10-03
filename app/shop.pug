@@ -6,7 +6,7 @@ block content
 	.page-content
 		.header-shop
 			.container
-				.user-info.d-flex
+				.user-info.d-flex.flex-wrap
 					.avatar.active
 						img(src="images/member-slide-2.png")
 						.live-text LIVE
@@ -18,21 +18,21 @@ block content
 								a(href="#") www.instagram.com/Kim Hee Song
 							.item-url
 								a(href="#") www.facebook.com/Kim Hee Song
-						.social-follow.d-flex
+						.social-follow.d-flex.flex-wrap
 							.follow-item
 								.icon-follow
 									img(src="images/icon-follow-1.png") 
 								.number-follow 2000
 								.clearfix
-								.follow-description
-									i.fa.fa-check 
+								.follow-description.folow-button
+									
 									span Follow
 							.follow-item
 								.icon-follow
 									img(src="images/icon-follow-2.png") 
 								.number-follow 2000
 								.clearfix
-								.follow-description
+								.follow-description.social-folow-button
 									| Go 
 									span Facebook
 							.follow-item
@@ -40,29 +40,12 @@ block content
 									img(src="images/icon-follow-3.png") 
 								.number-follow 2000
 								.clearfix
-								.follow-description
+								.follow-description.social-folow-button
 									| Go 
 									span Instagram
 		.main
 			.container
-				.sticky-sidebar
-					.cart-history
-						h3 Đã xem
-						.list-product-history
-							.item
-								img(src="images/hist-item-1.jpg")
-							.item
-								img(src="images/hist-item-2.jpg")
-							.item
-								img(src="images/hist-item-4.jpg")
-						p.cart-number 
-							a(href="#") Giỏ hàng
-							span 1
-					hr
-					.back-to-button.back-to-top
-						i.fa.fa-angle-up
-					.back-to-button.back-to-bottom
-						i.fa.fa-angle-down
+				include includes/cart-history.pug
 			
 				.live-colection
 					.livestream-block.d-flex.flex-wrap
@@ -496,7 +479,7 @@ block content
 							li
 								a(href="#tab3-2") Giá thấp 
 						#tab3-1.tab-content
-							.list-products.d-flex
+							.list-products.d-flex.flex-wrap
 								.item-product-list.col-per-2.d-flex
 									.thumbnail-product
 										.avatar
@@ -529,7 +512,7 @@ block content
 										.order
 											a(href="#") Đặt hàng trước
 											span để nhận ưu đãi 5%
-							.list-products.d-flex
+							.list-products.d-flex.flex-wrap
 								.item-product-list.col-per-2.d-flex
 									.thumbnail-product
 										.avatar
