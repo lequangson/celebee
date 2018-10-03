@@ -47,7 +47,7 @@
 							background-color: $white;
 							@include rounded(6px);
 							@include transition(all 0.3s);
-							visibility: hidden;
+							display: none;
 							p {
 								margin-bottom: 5px; 
 								i {
@@ -78,7 +78,7 @@
 						}
 						&:hover {
 							.product-added { 
-								visibility: visible;
+								display: block;
 							}
 						}
 					}
@@ -247,24 +247,100 @@
 			@include transition(all 0.3s);
 			.card.card-body {
 				z-index: 999;
-				background-color: rgba($white,0.8);
-			}
-			.category-list {
-				
-				list-style: none;
-				padding-left: 0;
-				
-				margin-top: 0;
-				li {
-					a {
-						color: $color-link;
+				padding: 0;
+				border: 1px solid $color-primary;
+				border-radius: 4px;
+				.category-list {
+					text-align: left;
+					list-style: none;
+					padding-left: 0;
+					margin-bottom: 0;
+					margin-top: 0;
+					 li {
+						position: relative;
+						background-color: $color-primary;
+						
+						 a {
+							display: block;
+							border-bottom: 1px solid $white;
+							color: $white;
+							font-size: 16px;
+							padding-left: 10px;
+							padding-right: 10px;
+						}
+						.sub-menu {
+							list-style: none;
+							position: absolute;
+							left: 100%;
+							top: 0;
+							width: 180px;
+							background-color: $white;
+							opacity: 0;
+							padding-left: 20px;
+							padding-top: 15px;
+							padding-bottom: 15px;
+							li {
+								background-color: $white;
+								border-left: 1px solid #000;
+								position: relative;
+								a {
+									color: #000;
+									&:hover {
+										color: $color-primary;
+									}
+									i {
+										float: right;
+										line-height: 46px;
+										font-size: 18px;
+									}
+								}
+								.sub-menu-sub {
+									position: absolute;
+									left: 100%;
+									width: 150px;
+									top: 0;
+									background-color: #e8e8e8;
+									list-style: none;
+									padding:10px 20px;
+									
+									li {
+										background-color: #e8e8e8;
+										border-left: none;
+										line-height: 24px;
+										border-bottom: 1px solid #d8d8d8;
+										&:last-child {
+											border: none;
+										}
+										a {
+											font-size: 14px;
+											color: $color-link;
+											&:hover {
+												color: #000;
+											}
+										}
+									}
+								}
+							}
+						}
+						&:last-child {
+							a {
+								border: none;
+							}
+						}
 						&:hover {
-							color: $color-primary;
-							text-decoration: none;
+							background: $white;
+							a {
+								color: $color-primary;
+								border-color: transparent;
+							}
+							.sub-menu {
+								opacity: 1;
+							}
 						}
 					}
 				}
 			}
+			
 		}
 		&:hover {
 			#category-collapse { 

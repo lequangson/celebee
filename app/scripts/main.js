@@ -9,11 +9,19 @@ $(document).ready(function() {
        $("input[type='text']").focus();
      });
 
-	  $('.home-slide').slick();
-	  $('.home-slide-2').slick();
+	  $('.home-slide').slick({
+	  		dots:true,
+	  		autoplay: true,
+  			autoplaySpeed: 3000,
+	  });
+	  $('.home-slide-2').slick({
+	  	dots:true,
+	  	autoplay: true,
+  		autoplaySpeed: 3000,
+	  });
 	  $('.slide-thumbnail-product').slick();
 	  $('.member-slide').slick({
-		  dot: false,
+		  dots: false,
 		  infinite: true,
 		  speed: 300,
 		  slidesToShow: 5,
@@ -67,6 +75,21 @@ $(document).ready(function() {
         });
     });
     $('.thumbnail-trend').each(function(index, value){
+    	var $imageHover = $(this).find('.image-hover').attr('data-hover');
+    	var $imageOrigin = $(this).find('.image-hover').attr('data-origin');
+    	 $(this).find('.image-hover').attr('src',$imageOrigin);
+    	$(this).mouseenter(function(){
+    		
+			  $(this).find('.image-hover').attr('src',$imageHover);
+			
+	 	});
+	 	$(this).mouseleave(function(){
+    		
+			  $(this).find('.image-hover').attr('src',$imageOrigin);
+			
+	 	});
+    });
+     $('.thumbnail-product').each(function(index, value){
     	var $imageHover = $(this).find('.image-hover').attr('data-hover');
     	var $imageOrigin = $(this).find('.image-hover').attr('data-origin');
     	 $(this).find('.image-hover').attr('src',$imageOrigin);
