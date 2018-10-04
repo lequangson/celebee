@@ -19,19 +19,23 @@ $(document).ready(function() {
 	  	autoplay: true,
   		autoplaySpeed: 3000,
 	  });
-	  $('.slide-thumbnail-product').slick();
+	  $('.slide-thumbnail-product').slick({
+	  	autoplay: true,
+  		  autoplaySpeed: 3000,
+	  });
 	  $('.member-slide').slick({
 		  dots: false,
 		  infinite: true,
-		  speed: 300,
+		  autoplay: true,
+  		  autoplaySpeed: 3000,
 		  slidesToShow: 5,
-		  slidesToScroll: 5,
+		  slidesToScroll: 1,
 		  responsive: [
 		    {
 		      breakpoint: 1250,
 		      settings: {
 		        slidesToShow: 3,
-		        slidesToScroll: 3,
+		        slidesToScroll: 1,
 		        infinite: true,
 		        dots: true
 		      }
@@ -40,7 +44,7 @@ $(document).ready(function() {
 		      breakpoint: 767,
 		      settings: {
 		        slidesToShow: 2,
-		        slidesToScroll: 2
+		        slidesToScroll: 1
 		      }
 		    },
 		    {
@@ -59,6 +63,7 @@ $(document).ready(function() {
 		  dot: false,
 		  infinite: true,
 		  speed: 300,
+
 		  slidesToShow: 6,
 		  slidesToScroll: 6,
 		  vertical: true,
@@ -80,30 +85,33 @@ $(document).ready(function() {
     	var urlOrigin = 'url(' +imageOrigin +')';
     	var urlHover =  'url(' +imageHover +')';
     	
-    	 $(this).find('.image-hover').css('background',urlOrigin);
+    	 $(this).find('.image-hover').css('background-image',urlOrigin);
     	$(this).mouseenter(function(){
     		
-			  $(this).find('.image-hover').css('background',urlHover);
+			  $(this).find('.image-hover').css('background-image',urlHover);
 			
 	 	});
 	 	$(this).mouseleave(function(){
     		
-			  $(this).find('.image-hover').css('background',urlOrigin);
+			  $(this).find('.image-hover').css('background-image',urlOrigin);
 			
 	 	});
     });
      $('.thumbnail-product').each(function(index, value){
     	var imageHover = $(this).find('.image-hover').attr('data-hover');
     	var imageOrigin = $(this).find('.image-hover').attr('data-origin');
-    	 $(this).find('.image-hover').attr('src',imageOrigin);
+    	var urlOrigin = 'url(' +imageOrigin +')';
+    	var urlHover =  'url(' +imageHover +')';
+    	
+    	 $(this).find('.image-hover').css('background-image',urlOrigin);
     	$(this).mouseenter(function(){
     		
-			  $(this).find('.image-hover').attr('src',imageHover);
+			  $(this).find('.image-hover').css('background-image',urlHover);
 			
 	 	});
 	 	$(this).mouseleave(function(){
     		
-			  $(this).find('.image-hover').attr('src',imageOrigin);
+			  $(this).find('.image-hover').css('background-image',urlOrigin);
 			
 	 	});
     });

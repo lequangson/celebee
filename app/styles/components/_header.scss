@@ -93,7 +93,7 @@
 							bottom: -30px;
 							background-color: $color-primary;
 							color: $white;
-							opacity: 0;
+							
 							text-align: center;
 							padding: 2px 5px;
 							width: 30%;
@@ -111,13 +111,6 @@
 							 	border-right: 5px solid transparent;
 							  
 							  	border-bottom: 5px solid $color-primary;	
-							}
-						}
-						&:hover {
-							.beecoin { 
-								opacity: 1;
-								@include transition(all 0.3s);
-
 							}
 						}
 					}
