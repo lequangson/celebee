@@ -58,6 +58,13 @@
 			margin-top: 50px;
 			.follow-item {
 				margin-right: 65px;
+				@media(max-width: 480px) {
+					display: flex;
+					.follow-description {
+						margin-left: 20px;
+						margin-top: 0!important;
+					}
+				}
 				.icon-follow {
 					float: left;
 					margin-right: 10px;
@@ -83,17 +90,18 @@
 					font-size: 20px;
 					cursor: pointer;
 					text-transform: uppercase;
+					transition: all 0.3s;
+					&:hover {
+						background: $color-primary;
+						color: $white;
+					}
 					span {
 						font-weight: bold;
 						margin-left: 5px;
 					}
-					&.social-folow-button {
-						 transition: all 0.3s;
-						&:hover {
-							background: $color-primary;
-							color: $white;
-						}
-					}
+					
+						
+					
 				}
 
 				&:last-child {

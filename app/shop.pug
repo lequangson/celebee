@@ -47,118 +47,7 @@ block content
 			.container
 				include includes/cart-history.pug
 			
-				.live-colection
-					.livestream-block.d-flex.flex-wrap
-						.live-area.d-flex
-							img(src="images/live-area.png")
-							.overlay-play
-								img(src="images/icon/icon-video.png")
-								.title-live
-									| Xem 
-									span livestream 
-									| nhận mã giảm giá
-						.product-area.d-flex
-							.left-product-area
-								.thumbnail-product.slide-thumbnail-product
-									.slide-item
-										img(src="images/product-sale.jpg")
-										.overlay-content
-											| Xem stream nhận mã giảm giá
-									.slide-item
-										img(src="images/product-sale-2.jpg")
-										.overlay-content
-											| Xem stream nhận mã giảm giá
-									.slide-item
-										img(src="images/product-sale.jpg")
-										.overlay-content
-											| Xem stream nhận mã giảm giá
-								.footer-product
-									
-									h3
-										a(href="#") Nước Hoa Hồng
-									
-									.price.d-flex
-										.price-detail
-											.price-old 1.300.000đ
-											.price-sale 910.000đ
-										.sale-off
-											p 30% off
-									.in-store đã bán 99
-									a(href="#").add-cart Mua ngay
-
-							.right-product-area
-								.multi-product-slide
-									.slide-item.d-flex
-										.avatar
-											img(src="images/avatar-1.png")
-										.product-name Áo vest
-										.date-time
-											p 16/08
-											p 18.00 - 10.00
-									.slide-item.d-flex
-										.avatar.active
-											img(src="images/avatar-1.png")
-											span Live
-										.product-name Áo vest
-										.date-time
-											p 16/08
-											p 18.00 - 10.00
-									.slide-item.d-flex
-										.avatar
-											img(src="images/avatar-1.png")
-										.product-name Áo vest
-										.date-time
-											p 16/08
-											p 18.00 - 10.00
-									.slide-item.d-flex
-										.avatar
-											img(src="images/avatar-1.png")
-										.product-name Áo vest
-										.date-time
-											p 16/08
-											p 18.00 - 10.00
-									.slide-item.d-flex
-										.avatar
-											img(src="images/avatar-1.png")
-										.product-name Áo vest
-										.date-time
-											p 16/08
-											p 18.00 - 10.00
-									.slide-item.d-flex
-										.avatar
-											img(src="images/avatar-1.png")
-										.product-name Áo vest
-										.date-time
-											p 16/08
-											p 18.00 - 10.00
-									.slide-item.d-flex
-										.avatar
-											img(src="images/avatar-1.png")
-										.product-name Áo vest
-										.date-time
-											p 16/08
-											p 18.00 - 10.00
-									.slide-item.d-flex
-										.avatar
-											img(src="images/avatar-1.png")
-										.product-name Áo vest
-										.date-time
-											p 16/08
-											p 18.00 - 10.00
-									.slide-item.d-flex
-										.avatar
-											img(src="images/avatar-1.png")
-										.product-name Áo vest
-										.date-time
-											p 16/08
-											p 18.00 - 10.00
-									.slide-item.d-flex
-										.avatar
-											img(src="images/avatar-1.png")
-										.product-name Áo vest
-										.date-time
-											p 16/08
-											p 18.00 - 10.00
+				include includes/lstr-block.pug
 				.tab-products
 					ul.tabs
 						li
@@ -189,7 +78,8 @@ block content
 												p.name Trương Bảo Anh
 												p.follow 2000 follows
 										.thumbnail-product
-											img(src="images/product-sale.jpg")
+											a(href="#")
+												.image-hover(data-origin="images/product-sale-2.jpg" data-hover="images/product-sale.jpg")
 											.sold-out Sold out
 
 										.footer-product.d-flex
@@ -220,13 +110,16 @@ block content
 												p.name Trương Bảo Anh
 												p.follow 2000 follows
 										.thumbnail-product
-											img(src="images/product-sale.jpg")
+											a(href="#")
+												.image-hover(data-origin="images/product-sale-2.jpg" data-hover="images/product-sale.jpg")
 											.overlay-content
-												h3 99 Loves
+												a.add-to-cart(href="#")
+													img.cart-origin(src="images/icon-cart.png")
+													img.cart-hover(src="images/icon-cart-hover.png")
 												.love
 													a(href="#")
-														i.fa.fa-heart-o
-														i.fa.fa-heart
+														img.wishlist(src="images/icon-wishlist.png")
+														img.wishlist-a(src="images/icon-wishlist-a.png")
 										.footer-product.d-flex
 											.left-footer-product
 												h3
@@ -250,13 +143,16 @@ block content
 												p.name Trương Bảo Anh
 												p.follow 2000 follows
 										.thumbnail-product
-											img(src="images/product-sale.jpg")
+											a(href="#")
+												.image-hover(data-origin="images/product-sale-2.jpg" data-hover="images/product-sale.jpg")
 											.overlay-content
-												h3 99 Loves
-												.love.active
+												a.add-to-cart(href="#")
+													img.cart-origin(src="images/icon-cart.png")
+													img.cart-hover(src="images/icon-cart-hover.png")
+												.love
 													a(href="#")
-														i.fa.fa-heart-o
-														i.fa.fa-heart
+														img.wishlist(src="images/icon-wishlist.png")
+														img.wishlist-a(src="images/icon-wishlist-a.png")
 										.footer-product.d-flex
 											.left-footer-product
 												h3
@@ -280,13 +176,16 @@ block content
 												p.name Trương Bảo Anh
 												p.follow 2000 follows
 										.thumbnail-product
-											img(src="images/product-sale.jpg")
+											a(href="#")
+												.image-hover(data-origin="images/product-sale-2.jpg" data-hover="images/product-sale.jpg")
 											.overlay-content
-												h3 99 Loves
-												.love.active
+												a.add-to-cart(href="#")
+													img.cart-origin(src="images/icon-cart.png")
+													img.cart-hover(src="images/icon-cart-hover.png")
+												.love
 													a(href="#")
-														i.fa.fa-heart-o
-														i.fa.fa-heart
+														img.wishlist(src="images/icon-wishlist.png")
+														img.wishlist-a(src="images/icon-wishlist-a.png")
 										.footer-product.d-flex
 											.left-footer-product
 												h3

@@ -365,6 +365,9 @@
 		.left-product-area {
 			margin-right: 10px;
 			width: 40%;
+			@media(max-width: 480px) {
+				width: 100%;
+			}
 			.footer-product {
 				h3 {
 					text-align: center;
@@ -440,6 +443,10 @@
 		}
 		.right-product-area {
 			width: calc(60% - 10px);
+			@media(max-width: 480px) {
+				width: 100%;
+				margin-top: 15px;
+			}
 			.multi-product-slide {
 				
 				.slide-item {
@@ -646,9 +653,11 @@
 .live-colection {
 	.live-title {
 		display: inline-block;
+		line-height: 32px;
 		.live-text {
 			display: inline-block;
 			color: $color-primary;
+			line-height: 1.5;
 			padding: 1px 5px;
 			border: 1px solid $color-primary;
 			@include rounded(4px);
@@ -710,6 +719,11 @@
 			
 		}
 	
+	}
+	.thumbnail-product {
+		.image-hover {
+			height: 220px;
+		}
 	}
 }
 .col-per-3 {
@@ -780,10 +794,10 @@
 				
 				width: 100%;
 				bottom: 0;
-				height: 165px;
+				height: 90px;
 
 				background-color: rgba(#000,0.45);
-				@include transition(all 0.3s);
+				@include transition(all 0.5s);
 				text-align: center;
 				text-transform: uppercase;
 		
@@ -897,7 +911,7 @@
 			.thumbnail-trend {
 				.overlay-content {
 					opacity: 1;
-					
+					height: 165px;
 				}
 			}
 		}
@@ -982,9 +996,9 @@
 		text-align: center;
 		width: 100%;
 		bottom: 0;
-		height: 80px;
+		height: 0;
 		background-color: rgba(#000,0.45);
-		@include transition(all 0.3s);
+		@include transition(all 0.5s);
 		
 		.love {
 			display: inline-block;
@@ -1134,6 +1148,7 @@
 			.thumbnail-product {
 				.overlay-content {
 					opacity: 1;
+					height: 80px;
 				}
 			}
 		}
@@ -1281,7 +1296,10 @@
 	}
 }
 @media(max-width: 767px) {
-	.slick-arrow {
-		display: none!important;
+	.home-slide, .home-slide-2 {
+		.slick-arrow {
+			display: none!important;
+		}
 	}
+	
 }
