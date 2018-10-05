@@ -1,0 +1,27 @@
+extends layouts/default
+
+block content
+	header
+	.header-desktop
+		.top-header
+			.container
+				.top-bar
+					ul.top-bar-nav.d-flex.justify-content-end
+						li.member-login
+							a(href="#") Đăng ký
+							.beecoin +5 
+								img(src="images/icon/icon-heart.png")
+						li
+							a(href="#") Đăng nhập
+						li
+							a(href="#") Hướng dẫn mua hàng
+						li.cart
+							a(href="#") Giỏ hàng 
+								span.number-item (1)
+								img(src="images/icon/icon-cart.png")
+							.product-added
+								p
+									i.fa.fa-check-circle
+									span Thêm vào giỏ hàng thành công
+								a(href="#") Xem chi tiết và thanh toán
+	
