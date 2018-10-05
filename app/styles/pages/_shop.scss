@@ -58,7 +58,7 @@
 			margin-top: 50px;
 			.follow-item {
 				margin-right: 65px;
-				@media(max-width: 480px) {
+				@media(max-width:767px) {
 					display: flex;
 					.follow-description {
 						margin-left: 20px;
