@@ -133,7 +133,9 @@
 	}
 }
 .member-slide {
-
+	.slick-dots {
+		display: none!important;
+	}
 	.slide-item {
 		img {
 			margin: auto;
@@ -386,11 +388,17 @@
 						font-size: 16px;
 					    color: #9d9d9d;
 					    text-decoration: line-through;
+					    @media(max-width: 767px) {
+					    	font-size: 14px;
+					    }
 					}
 					.price-sale {
 						font-size: 20px;
 					    color: #ed1863;
 					    font-weight: 700;
+					    @media(max-width: 767px) {
+					    	font-size: 16px;
+					    }
 					}
 				}
 				.sale-off {
@@ -596,6 +604,12 @@
 			top: 50%;
 			width: 180px;
 			margin-top: -1px;
+			@media(max-width: 767px) {
+				width: 145px;
+			}
+			@media(max-width: 600px) {
+				width: 75px;
+			}
 		}
 		&:before {
 			right: 100%;
@@ -637,6 +651,9 @@
 		font-size: 24px;
 		color: $color-primary;
 		font-weight: bold;
+		@media(max-width: 767px){
+			font-size: 16px;
+		}
 		li {
 			display: inline-block;
 			padding: 1px 5px;
@@ -686,6 +703,9 @@
 	}
 	.countdown {
 		display: inline-block;
+		ul {
+			padding-left: 10px;
+		}
 	}
 }
 .col-per-4 {
@@ -743,20 +763,14 @@
 	}
 	.left-footer-product{
 		width: 50%;
-		@media(max-width: 767px) {
-			width: 100%;
-			
-		}
+		
 	}
 	.right-footer-product {
 		width: 50%;
 	 	.sale-off {
 	 		margin-left: 25px;
 	 	}
-	@media(max-width: 767px) {
-			width: 100%;
-			
-		}
+	
 	}
 	
 }
@@ -781,11 +795,12 @@
 			position: relative;
 			.image-hover {
 				height: 400px;
-				
 				width: 100%;
 				background-repeat: no-repeat;
 				background-size: cover;
 				background-position: center top;
+				 -webkit-animation: switch 5s infinite; /* Chrome, Safari, Opera */ 
+    			animation: switch 5s infinite;
 			}
 			.overlay-content {
 				position: absolute;
@@ -1200,11 +1215,17 @@
 						font-size: 16px;
 						color: $color-link;
 						text-decoration: line-through;
+						@media(max-width: 767px) {
+							font-size: 14px;
+						}
 					}
 					.price-sale {
 						font-size: 20px;
 						color: $color-primary;
 						font-weight: 700;
+						@media(max-width: 767px) {
+							font-size: 16px;
+						}
 					}
 
 				}
@@ -1228,6 +1249,9 @@
 					text-align: center;
 					@media(max-width: 767px) {
 						margin-left: 3px;
+						width: 40px;
+						height: 40px;
+
 					}
 					p {
 						line-height: 1;
@@ -1235,6 +1259,9 @@
 					    text-transform: uppercase;
 					    color: #fff;
 					    font-size: 14px;
+					    @media(max-width: 767px) {
+					    	font-size: 12px;
+					    }
 					}
 				}
 			}
