@@ -718,26 +718,20 @@
 		width: 45%;
 		
 	}
-	@media(max-width: 480px) {
+	@media(max-width: 575px) {
 		width: 85%;
 		
 	}
 	.left-footer-product{
 		width: 40%;
-		@media(max-width: 767px) {
-			width: 100%;
-			
-		}
+		
 	}
 	.right-footer-product {
 		width: 60%;
 	 	.sale-off {
 	 		margin-left: 5px;
 	 	}
-	 	@media(max-width: 767px) {
-			width: 100%;
-			
-		}
+	 	
 	
 	}
 	.thumbnail-product {
@@ -757,7 +751,7 @@
 		
 	}
 
-	@media(max-width: 480px) {
+	@media(max-width: 575px) {
 		width: 85%;
 		
 	}
@@ -794,7 +788,7 @@
 		.thumbnail-trend {
 			position: relative;
 			.image-hover {
-				height: 400px;
+				height: 470px;
 				width: 100%;
 				background-repeat: no-repeat;
 				background-size: cover;
