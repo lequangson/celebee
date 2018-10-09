@@ -6,6 +6,7 @@
 				list-style: none;
 				padding-left: 0;
 				flex-wrap: wrap;
+				margin-bottom: 10px;
 				li {
 					position: relative;
 					margin-right: 5px;
@@ -162,11 +163,12 @@
 						}
 					}
 					&.member-login {
+						padding-bottom: 15px;
 						.beecoin {
 							position: absolute;
 							left: 50%;
 							transform: translateX(-50%);
-							top: 120%;
+							top: 80%;
 							background-color: $color-primary;
 							color: $white;
 							
@@ -202,7 +204,8 @@
 	flex-wrap: wrap;
 	.logo {
 		width: 30%;
-		margin-top: -30px;
+		margin-top: -50px;
+		margin-bottom: 15px;
 		img {
 			max-width: 100%;
 		}
@@ -312,7 +315,7 @@
 			}
 		}
 		#category-collapse {
-			opacity: 0;
+			display: none;
 			@include transition(all 0.3s);
 			.card.card-body {
 				z-index: 999;
@@ -344,7 +347,7 @@
 							top: 0;
 							width: 180px;
 							background-color: $white;
-							opacity: 0;
+							display: none;
 							padding-left: 20px;
 							padding-top: 15px;
 							padding-bottom: 15px;
@@ -371,7 +374,7 @@
 									background-color: #e8e8e8;
 									list-style: none;
 									padding:10px 20px;
-									opacity: 0;
+									display: none;
 									@include transition(all 0.3s);
 									li {
 										background-color: #e8e8e8;
@@ -392,7 +395,7 @@
 								}
 								&:hover {
 									.sub-menu-sub {
-										opacity: 1;
+										display: block;
 									}
 								}
 							}
@@ -409,7 +412,7 @@
 								border-color: transparent;
 							}
 							.sub-menu {
-								opacity: 1;
+								display: block;
 							}
 						}
 					}
@@ -419,7 +422,7 @@
 		}
 		&:hover {
 			#category-collapse { 
-				opacity: 1;
+				display: block;
 			}
 		}
 	}
@@ -538,11 +541,12 @@
 	 					}
 	 				}
 	 				&.member-login {
+	 					padding-bottom: 15px;
 	 					.beecoin {
 	 						position: absolute;
 						    left: 50%;
 						    transform: translateX(-50%);
-						    top: 120%;
+						    top: 85%;
 						    background-color: #ed1863;
 						    color: #fff;
 						    text-align: center;
@@ -808,7 +812,7 @@
 					width: 100%;
 					background:	$white;
 					border-radius: 9px;
-					opacity: 1;
+					display: block;
 					left: 0;
 					@include rotate(0deg);
 					@include transition(all 0.25s); 
@@ -833,7 +837,7 @@
 						 @include rotate(135deg);
 						}
 						&:nth-child(2) {
-							opacity: 0;
+							display: none;
 							left: -30px;
 						}
 						&:nth-child(3) {
@@ -934,7 +938,7 @@
 					display: none;
 				}
 				position: absolute;
-				top: 30px;
+				top: 30px!important;
 				width: 90px;
 				right: -100px;
 				z-index: 9999;
@@ -958,12 +962,12 @@
 								position: absolute;
 								top: -6px;
 								right: 15px;
-								opacity: 0;
+								display: none;
 								color: $color-primary;
 							}
 							&:hover {
 								.delete {
-									opacity: 1;
+									display: block;
 								}
 							}
 						}
