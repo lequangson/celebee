@@ -1,5 +1,52 @@
 #myModal.modal.fade(role="dialgo")
 	.modal-dialog
 		.modal-content
-			.modal-header
-				button.close(data-dismiss="modal") &times;
+			
+			.modal-body
+				button.close(data-dismiss="modal") Close
+				.content-login.d-flex
+					.left-login
+						h2 Quyền lợi khi đăng ký
+							br
+							| thành viên
+						ul
+							li 
+								img(src="images/check.png")
+								p Hưởng chính sách giá đặc biệt cho thành viên
+							li 
+								img(src="images/check.png")
+								p Sản phẩm đa dạng
+							li 
+								img(src="images/check.png")
+								p Đăng kí để được thưởng ưu đãi giao dịch hấp dẫn
+							li 	
+								img(src="images/check.png")
+								p +5 becoin cho mỗi lần đăng kí
+						.register-button
+							a(href="#") Đăng kí
+					.right-login
+						img.login-logo(src="images/logo.png")
+						
+						.content-form
+							h2 Login
+							form(action="" method="get")
+								input.email(type="text" placeholder="Email")
+								input.password(type="password" placeholder="Password")
+								.remember-password
+									label 
+										| Remember me
+										input(type="checkbox" checked="checked") 
+										span.checkmark 
+										
+									a(href="#") Quên mật khẩu?
+								button.btn-singin Login
+							.login-space Hoặc đăng nhập bằng
+							.social-login.d-flex
+								a(href="#")
+									img.fb-login(src="images/fb-login.png")
+								a(href="#")
+									img.gplus-login(src="images/gplus-login.png")
+
+
+
+

@@ -61,6 +61,12 @@
 		}
 		.social-follow {
 			margin-top: 50px;
+			@media(max-width: 767px) {
+				margin-top: 30px;
+				border-top: 1px solid $color-border;
+				position: relative;
+				width: calc(100% - 40px);
+			}
 			.follow-item {
 				margin-right: 65px;
 				@media(max-width:767px) {
@@ -299,6 +305,10 @@
 					font-size: 16px;
 					color: $color-primary;
 					vertical-align: bottom;
+					@media(max-width: 600px) {
+						display: block;
+						margin-top: 5px;
+					}
 				}
 			}
 		}
