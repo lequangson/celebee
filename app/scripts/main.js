@@ -20,7 +20,7 @@ $(document).ready(function() {
   		autoplaySpeed: 3000,
 	  });
 	  $('.slide-thumbnail-product').slick({
-	  	autoplay: true,
+	  	
   		  autoplaySpeed: 3000,
 	  });
 	  $('.member-slide').slick({

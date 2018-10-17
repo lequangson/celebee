@@ -165,6 +165,25 @@
 			left: 3px;
 		}
 	}
+	.footer-product {
+		@media(max-width: 480px) {
+			margin-top: 10px;
+			display: flex;
+			.left-footer-product {
+				width: 50%;
+				h3 {
+					text-align: left!important;
+				}
+			}
+			.right-footer-product {
+				width: 50%;
+				jjustify-content: flex-end;
+				.price {
+					justify-content: flex-end;
+				}
+			}
+		}
+	}
 }
 .member-slide {
 	.slick-dots {
