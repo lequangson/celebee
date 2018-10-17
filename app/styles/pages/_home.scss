@@ -11,6 +11,31 @@
 		li {
 			margin-left: 5px;
 			margin-right: 5px;
+			@media screen and (-webkit-min-device-pixel-ratio:0)
+			  {
+				  button {
+				  	position: relative;
+				  	background: transparent !important;
+					&:before {
+						content: '';
+						position: absolute;
+						top: 0;
+						background: $color-link;
+						left: 0;
+						width: 12px;
+						height: 12px;
+						border-radius: 50%;
+					}	
+				}
+				&.slick-active, &:hover {
+					button {
+						background: transparent;
+						&:before {
+							background: $color-primary;
+						}
+					}
+				}
+			}
 			button {
 				width: 12px;
 				height: 12px;
@@ -471,6 +496,9 @@
 							border-radius: 50%;
 						}
 						&.active {
+							img {
+								border: 1px solid $color-primary;
+							}
 							span {
 								position: absolute;
 							    bottom: -2px;
@@ -500,6 +528,12 @@
 						background-color: #cbcbcb;
 						font-weight: 600;
 						margin-right: 10px;
+						a {
+							color: #000;
+							&:hover {
+								color: $color-primary;
+							}
+						}
 
 					}
 					.date-time {
@@ -598,6 +632,9 @@
   		span {
 			color: $black;
 		}
+		img {
+			margin-left: -11px;
+		}
 		&:before, &:after {
 			content: "";
 			position: absolute;
@@ -612,6 +649,9 @@
 			@media(max-width: 600px) {
 				width: 75px;
 			}
+			@media(max-width: 480px) {
+				display: none;
+			}
 		}
 		&:before {
 			right: 100%;
@@ -624,7 +664,7 @@
 		p {
 			position: absolute;
 			left: 0;
-			bottom: -5px;
+			bottom: 0;
 			font-size: 16px;
 			text-transform: uppercase;
 			font-weight: 600;
@@ -1341,4 +1381,9 @@
 		}
 	}
 	
+}
+.isotope-gallery {
+	@media(max-width: 767px) {
+		display: none;
+	}
 }
