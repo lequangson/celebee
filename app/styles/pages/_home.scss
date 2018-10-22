@@ -582,7 +582,7 @@
 					position: absolute;
 					left: 50%;
 					bottom: 0;
-					transform: translateX(-100%);
+					transform: translateX(-50%);
 					border: none;
 					background: none;
 					color: transparent;
@@ -612,9 +612,9 @@
 				}
 				.slick-prev {
 					position: absolute;
-					left: 55%;
+					left: 50%;
 					top: -15px;
-					transform: translateX(-100%);
+					transform: translateX(-50%);
 					border: none;
 					background: none;
 					color: transparent;
@@ -870,6 +870,9 @@
 				background-position: center top;
 				 -webkit-animation: switch 5s infinite; /* Chrome, Safari, Opera */ 
     			animation: switch 5s infinite;
+    			@media(max-width: 480px) {
+    				height: 625px;
+    			}
 			}
 			.overlay-content {
 				position: absolute;
@@ -952,6 +955,7 @@
 						padding-top: 10px;
 						padding-left: 15px;
 						width: 70%;
+						text-align: left;
 						h3 {
 							a {
 								font-size: 14px;
@@ -1270,6 +1274,9 @@
 					position: absolute;
 					left: 0;
 					top: 55px;
+					@media(max-width: 480px) {
+						top: 40px;
+					}
 					i {
 						color: $color-primary;
 					}
@@ -1296,7 +1303,9 @@
 							font-size: 16px;
 						}
 					}
-
+					@media(max-width: 480px) {
+						justify-content: flex-end;
+					}
 				}
 				.in-store {
 					padding: 2px 15px;
