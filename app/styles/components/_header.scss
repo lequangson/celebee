@@ -876,7 +876,7 @@
 				.search-box {
 					position: absolute;
 					top: 95%;
-					right: 0;
+					right: 10px;
 					width: 250px;
 					display: none;
 					z-index: 999;
@@ -884,9 +884,10 @@
 						position: relative;
 						
 						input[type="text"] {
-							height: 48px;
+							height: 30px;
 							width: 95%;
-							padding-left: 10px;
+							padding: 10px;
+							line-height: 30px;
 							border: 1px solid $color-primary;
 
 							&:focus{
@@ -896,11 +897,13 @@
 						button[type="submit"] {
 							width: 30px;
 							height: 30px;
+
 							background: url(../images/icon/icon-search.png) center no-repeat;
+							background-size: 55%;
 							border: none;
 							color: transparent;
 							position: absolute;
-							right: 10px;
+							right: -4px;
 							top: 10px;
 						}
 
