@@ -149,6 +149,9 @@
 		width: 20px;
 		height: 40px;
 		top: 30%;
+		@media(max-width: 480px) {
+			top: 37%;
+		}
 		border-radius:  8px 0 0 8px;
 		&:after {
 			font-size: 30px;
@@ -159,6 +162,9 @@
 		width: 20px;
 		height: 40px;
 		top: 30%;
+		@media(max-width: 480px) {
+			top: 37%;
+		}
 		border-radius:  0 8px 8px 0;
 		&:after {
 			font-size: 30px;
@@ -563,6 +569,9 @@
 								color: $color-primary;
 							}
 						}
+						@media(max-width: 480px) {
+							width: 61%;
+						}
 
 					}
 					.date-time {
@@ -586,6 +595,7 @@
 					border: none;
 					background: none;
 					color: transparent;
+					z-index: 9999;
 					&:after {
 						position: absolute;
 					    font-family: FontAwesome;
@@ -618,6 +628,7 @@
 					border: none;
 					background: none;
 					color: transparent;
+					z-index: 9999;
 					&:after {
 						position: absolute;
 					    font-family: FontAwesome;
@@ -1066,6 +1077,9 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center top;
+		@media(max-width: 480px) {
+			height: 280px;
+		}
 	}
 	&.thumbnail-high {
 		.image-hover {
@@ -1075,6 +1089,9 @@
 				background-repeat: no-repeat;
 				background-size: cover;
 				background-position: center top;
+				@media(max-width: 480px) {
+					height: 625px;
+				}
 			}
 	}
 	.overlay-content {
